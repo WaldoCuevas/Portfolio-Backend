@@ -1,7 +1,7 @@
 package com.portfolio.portfolioBackend.User.Models;
 
 // Ignorar Json Infinitos
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+//import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 //Librerias necesarias ->
 import java.util.*;
@@ -12,19 +12,19 @@ import lombok.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "usuario")
+@Table(name = "Usuario")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "usuario_id")
-    private Integer usuario_id;
+    @Column(name = "user_id")
+    private Integer user_id;
 
-    @Column(name = "nombre")
-    private String nombre;
+    @Column(name = "name")
+    private String name;
 
-    @Column(name = "apellido")
-    private String apellido;
+    @Column(name = "last_name")
+    private String last_name;
 
     @Column(name = "email")
     private String email;
@@ -35,20 +35,37 @@ public class User {
     @Column(name = "user_password")
     private String user_password;
 
-    @Column(name = "sobre_mi")
-    private String sobre_mi;
+    @Column(name = "about_me_r1")
+    private String about_me_r1;
 
+    @Column(name = "about_me_r2")
+    private String about_me_r2;
+
+    // Tabla Technology
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinTable(name = "User_ExpWork", joinColumns = @JoinColumn(name = "id_usuario"), inverseJoinColumns = @JoinColumn(name = "id_exp_laboral"))
-    private List<ExpWork> expWork = new ArrayList<>();
+    @JoinTable(name = "User_Technology", joinColumns = @JoinColumn(name = "id_usuario"), inverseJoinColumns = @JoinColumn(name = "id_Technology"))
+    private List<Technology> technologys = new ArrayList<>();
 
+    // Tabla Educacion
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "User_Education", joinColumns = @JoinColumn(name = "id_usuario"), inverseJoinColumns = @JoinColumn(name = "id_education"))
-    private List<Education> education = new ArrayList<>();
+    private List<Education> educations = new ArrayList<>();
 
-    @OneToOne()
-    @JoinColumn(name = "login_id")
-    @JsonManagedReference
-    private Login login;
+    // Tabla experiencia Laboral
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinTable(name = "User_ExpWork", joinColumns = @JoinColumn(name = "id_usuario"), inverseJoinColumns = @JoinColumn(name = "id_skill"))
+    private List<ExpWork> workExps = new ArrayList<>();
+    
+    //Tabla de Habilidades
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinTable(name = "User_Skills", joinColumns = @JoinColumn(name = "id_usuario"), inverseJoinColumns = @JoinColumn(name = "id_work_exp"))
+    private List<Skill> skills = new ArrayList<>();
+
+    // Tabla Project
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinTable(name = "User_Project", joinColumns = @JoinColumn(name = "id_usuario"), inverseJoinColumns = @JoinColumn(name = "id_project"))
+    private List<Project> projects = new ArrayList<>();
+
+    
 
 }

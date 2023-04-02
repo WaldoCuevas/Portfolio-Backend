@@ -5,6 +5,8 @@ import java.util.List;
 
 import com.portfolio.portfolioBackend.User.Models.Education;
 import com.portfolio.portfolioBackend.User.Models.ExpWork;
+import com.portfolio.portfolioBackend.User.Models.Project;
+import com.portfolio.portfolioBackend.User.Models.Technology;
 
 import lombok.*;
 
@@ -31,4 +33,7 @@ public class UserDTO {
 
     private List<Education> education = new ArrayList<>();
     
+    private List<Project> project = new ArrayList<>();
+
+    private List<Technology> technology = new ArrayList<>();
 }

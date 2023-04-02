@@ -1,0 +1,58 @@
+package com.portfolio.portfolioBackend.User.ServiceImp;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.portfolio.portfolioBackend.User.Models.Project;
+import com.portfolio.portfolioBackend.User.Repository.ProjectRepository;
+import com.portfolio.portfolioBackend.User.Service.ProjectService;
+
+@Service
+public class ProjectServiceImp implements ProjectService {
+
+    @Autowired
+    private ProjectRepository projectRepository;
+
+    /* ReadData */
+
+    @Override
+    public List<Project> getDataProject() {
+        return projectRepository.findAll();
+    }
+
+    /* AddData */
+
+    @Override
+    public Project addDataProject(Project project) {
+        return projectRepository.save(project);
+    }
+
+    /* ModifyData */
+
+    @Override
+    public Project modifyDataProject(Integer id, Project project) {
+
+        Project projectDb = projectRepository.findById(id).get();
+
+        projectDb.setProject_image(project.getProject_image());
+        projectDb.setProject_title(project.getProject_title());
+        projectDb.setProject_name(project.getProject_name());
+        projectDb.setProject_description(project.getProject_description());
+        projectDb.setStart(project.getStart());
+        projectDb.setEnd(project.getEnd());
+
+        projectRepository.save(projectDb);
+
+        return projectDb;
+    }
+
+    /* DeleteData */
+
+    @Override
+    public void deleteDataProject(Integer id) {
+        projectRepository.deleteById(id);
+    }
+
+}

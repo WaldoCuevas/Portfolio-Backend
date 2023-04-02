@@ -1,8 +1,12 @@
 package com.portfolio.portfolioBackend.User.Models;
 
+// Ignorar Json Infinitos
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 //Librerias necesarias ->
 import jakarta.persistence.*;
 import lombok.*;
+import java.util.*;
 
 @Entity
 @Data
@@ -16,10 +20,17 @@ public class Technology {
     @Column(name = "tecnology_id")
     private Integer tecnology_id;
 
-    @Column(name = "nombre_tecnologia")
-    private String nombre_tecnologia;
+    @Column(name = "name_technology")
+    private String name_technology;
 
-    @Column(name = "descripcion_tecnologia")
-    private String descripcion_tecnologia;
+    @Column(name = "description_technology_r1")
+    private String description_technology_r1;
+    
+    @Column(name = "description_technology_r2")
+    private String description_technology_r2;
 
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "technologys")
+    @JsonIgnore
+    private List<User> technologys = new ArrayList<>();
+    
 }

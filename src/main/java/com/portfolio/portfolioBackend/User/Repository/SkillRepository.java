@@ -4,8 +4,8 @@ package com.portfolio.portfolioBackend.User.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 //  Entidad Relacionada
-import com.portfolio.portfolioBackend.User.Models.Education;
+import com.portfolio.portfolioBackend.User.Models.Skill;
 
-public interface EducationRepository extends JpaRepository<Education,Integer>{
+public interface SkillRepository extends JpaRepository<Skill,Integer> {
     
 }

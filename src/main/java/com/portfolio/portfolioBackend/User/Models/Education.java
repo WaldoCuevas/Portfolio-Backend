@@ -12,34 +12,43 @@ import lombok.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "educacion")
+@Table(name = "Education")
 public class Education {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "education_id")
     private Integer education_id;
 
-    @Column(name = "imagen")
-    private String imagen;
+    @Column(name = "education_image")
+    private String education_image;
 
-    @Column(name = "escuela")
-    private String escuela;
+    @Column(name = "school")
+    private String school;
 
-    @Column(name = "titulo")
-    private String titulo;
+    @Column(name = "qualification")
+    private String qualification;
 
-    @Column(name = "descripcion")
-    private String descripcion;
+    @Column(name = "description_r1")
+    private String description_r1;
 
-    @Column(name = "inicio")
-    private String inicio;
-    
-    @Column(name = "fin")
-    private String fin;
+    @Column(name = "description_r2")
+    private String description_r2;
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "education")
+    @Column(name = "description_r3")
+    private String description_r3;
+
+    @Column(name = "description_r4")
+    private String description_r4;
+
+    @Column(name = "start")
+    private String start;
+
+    @Column(name = "end")
+    private String end;
+
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "educations")
     @JsonIgnore
-    private List<User> education = new ArrayList<>();
+    private List<User> educations = new ArrayList<>();
 
 }

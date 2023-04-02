@@ -1,67 +1,50 @@
 package com.portfolio.portfolioBackend.User.Controllers;
 
-// Librerias
 import java.util.*;
 
-// Spring Anotations
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-
-// HTTP Requets
 import org.springframework.web.bind.annotation.*;
 
-//DTO
-
-// Entidades
 import com.portfolio.portfolioBackend.User.Models.*;
-
-//Servicios
 import com.portfolio.portfolioBackend.User.Service.*;
+import com.portfolio.portfolioBackend.User.ServiceImp.UserServiceImp;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "http://localhost:4200/")
 public class UserController {
 
     @Autowired
     private UserServiceImp userServiceImp;
 
-    /*      ReadData     */
+    /* ReadData */
 
-    @GetMapping("/getPersonalData")
-    public ResponseEntity<List<User>> getPersonalData() {
-        return ResponseEntity.ok().body(this.userServiceImp.getPersonalData());
+    @GetMapping("/getPersonalData/{id}")
+    public ResponseEntity<List<User>> getPersonalData(@PathVariable Integer id) {
+        return ResponseEntity.ok().body(this.userServiceImp.getPersonalData(id));
     }
 
-    @GetMapping("/getDataWork")
-    public ResponseEntity<List<ExpWork>> getDataWork() {
-        return ResponseEntity.ok().body(this.userServiceImp.getDataWork());
-    }
-
-    @GetMapping("/getDataEducation")
-    public ResponseEntity<List<Education>> getDataEducation() {
-        return ResponseEntity.ok().body(this.userServiceImp.getDataEducational());
-    }
-
-    /*      AddData    */
+    /* AddData */
 
     @PostMapping("/addPersonalData")
     public ResponseEntity<User> addPersonalData(@RequestBody User user) {
         return ResponseEntity.ok().body(userServiceImp.addPersonalData(user));
     }
 
-    @PostMapping("/addDataWork")
-    public ResponseEntity<ExpWork> addDataWork(@RequestBody ExpWork expWork) {
-        return ResponseEntity.ok().body(userServiceImp.addDataWork(expWork));
+    /* ModifyData */
+
+    @PutMapping("modifyPersonalData/{id}")
+    public ResponseEntity<User> modifyPersonalData(@PathVariable Integer id, @RequestBody User user) {
+        return ResponseEntity.ok().body(this.userServiceImp.modifyPersonalData(id, user));
     }
 
-    @PostMapping("/addDataEducation")
-    public ResponseEntity<Education> addDataEducation(@RequestBody Education education) {
-        return ResponseEntity.ok().body(userServiceImp.addDataEducational(education));
+    /* DeleteData */
+
+    @DeleteMapping("deletePersonalData/{id}")
+    public void deletePersonalData(@PathVariable Integer id) {
+        this.userServiceImp.deletePersonalData(id);
     }
-
-    /*      ModifyData    */
-
-    /*      DeleteData    */
-    
 
 }

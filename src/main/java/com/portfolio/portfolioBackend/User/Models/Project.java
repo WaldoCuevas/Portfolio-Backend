@@ -1,34 +1,51 @@
 package com.portfolio.portfolioBackend.User.Models;
 
+// Ignorar Json Infinitos
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 //Librerias necesarias ->
 import jakarta.persistence.*;
 import lombok.*;
+import java.util.*;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "proyectos")
+@Table(name = "Projects")
 public class Project {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "proyectos_id")
-    private Integer proyectos_id;
+    private Integer project_id;
 
-    @Column(name = "imagen")
-    private String imagen;
+    @Column(name = "project_image")
+    private String project_image;
 
-    @Column(name = "proyecto")
-    private String proyecto;
+    @Column(name = "project_title")
+    private String project_title;
 
-    @Column(name = "descripcion")
-    private String descripcion;
+    @Column(name = "project_name")
+    private String project_name;
 
-    @Column(name = "inicio")
-    private String inicio;
+    @Column(name = "project_description")
+    private String project_description;
 
-    @Column(name = "fin")
-    private String fin;
+    @Column(name = "link_project")
+    private String link_project;
+
+    @Column(name = "link_github")
+    private String link_github;
+
+    @Column(name = "start")
+    private String start;
+    
+    @Column(name = "end")
+    private String end;
+
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "projects")
+    @JsonIgnore
+    private List<User> projects = new ArrayList<>();
 
 }
