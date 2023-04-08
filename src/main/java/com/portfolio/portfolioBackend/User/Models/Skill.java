@@ -1,12 +1,11 @@
 package com.portfolio.portfolioBackend.User.Models;
 
 // Ignorar Json Infinitos
-import com.fasterxml.jackson.annotation.JsonIgnore;
+//import com.fasterxml.jackson.annotation.JsonIgnore;
 
 //Librerias necesarias ->
 import jakarta.persistence.*;
 import lombok.*;
-import java.util.*;
 
 @Entity
 @Data
@@ -28,8 +27,7 @@ public class Skill {
     @Column(name = "skill_porcent")
     private Float skill_porcent;
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "skills")
-    @JsonIgnore
-    private List<User> skills = new ArrayList<>();
-
+    @ManyToOne
+    @JoinColumn(name="usuario_id", nullable=false)
+    private User skills;
 }

@@ -1,12 +1,11 @@
 package com.portfolio.portfolioBackend.User.Models;
 
 // Ignorar Json Infinitos
-import com.fasterxml.jackson.annotation.JsonIgnore;
+//import com.fasterxml.jackson.annotation.JsonIgnore;
 
 //Librerias necesarias ->
 import jakarta.persistence.*;
 import lombok.*;
-import java.util.*;
 
 @Entity
 @Data
@@ -29,8 +28,7 @@ public class Technology {
     @Column(name = "description_technology_r2")
     private String description_technology_r2;
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "technologys")
-    @JsonIgnore
-    private List<User> technologys = new ArrayList<>();
-    
+    @ManyToOne
+    @JoinColumn(name="usuario_id", nullable=false)
+    private User technologys;
 }

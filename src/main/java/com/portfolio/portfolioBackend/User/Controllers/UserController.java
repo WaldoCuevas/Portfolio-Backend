@@ -1,6 +1,6 @@
 package com.portfolio.portfolioBackend.User.Controllers;
 
-import java.util.*;
+//import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -19,9 +19,9 @@ public class UserController {
 
     /* ReadData */
 
-    @GetMapping("/getPersonalData/{id}")
-    public ResponseEntity<List<User>> getPersonalData(@PathVariable Integer id) {
-        return ResponseEntity.ok().body(this.userServiceImp.getPersonalData(id));
+    @GetMapping("/getPersonalData")
+    public ResponseEntity<User> getPersonalData() {
+        return ResponseEntity.ok().body(this.userServiceImp.getPersonalData());
     }
 
     /* AddData */
@@ -33,16 +33,16 @@ public class UserController {
 
     /* ModifyData */
 
-    @PutMapping("modifyPersonalData/{id}")
-    public ResponseEntity<User> modifyPersonalData(@PathVariable Integer id, @RequestBody User user) {
-        return ResponseEntity.ok().body(this.userServiceImp.modifyPersonalData(id, user));
+    @PutMapping("modifyPersonalData")
+    public ResponseEntity<User> modifyPersonalData(@RequestBody User user) {
+        return ResponseEntity.ok().body(this.userServiceImp.modifyPersonalData(user));
     }
 
     /* DeleteData */
 
-    @DeleteMapping("deletePersonalData/{id}")
-    public void deletePersonalData(@PathVariable Integer id) {
-        this.userServiceImp.deletePersonalData(id);
+    @DeleteMapping("deletePersonalData")
+    public void deletePersonalData() {
+        this.userServiceImp.deletePersonalData();
     }
 
 }

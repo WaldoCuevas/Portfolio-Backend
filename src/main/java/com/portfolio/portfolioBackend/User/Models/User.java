@@ -42,30 +42,23 @@ public class User {
     private String about_me_r2;
 
     // Tabla Technology
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinTable(name = "User_Technology", joinColumns = @JoinColumn(name = "id_usuario"), inverseJoinColumns = @JoinColumn(name = "id_Technology"))
-    private List<Technology> technologys = new ArrayList<>();
+    @OneToMany(mappedBy = "technologys")
+    private List<Technology> technologys;
 
     // Tabla Educacion
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinTable(name = "User_Education", joinColumns = @JoinColumn(name = "id_usuario"), inverseJoinColumns = @JoinColumn(name = "id_education"))
-    private List<Education> educations = new ArrayList<>();
+    @OneToMany(mappedBy = "educations")
+    private List<Education> educations;
 
     // Tabla experiencia Laboral
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinTable(name = "User_ExpWork", joinColumns = @JoinColumn(name = "id_usuario"), inverseJoinColumns = @JoinColumn(name = "id_skill"))
-    private List<ExpWork> workExps = new ArrayList<>();
+    @OneToMany(mappedBy = "workExps")
+    private List<ExpWork> workExps;
     
     //Tabla de Habilidades
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinTable(name = "User_Skills", joinColumns = @JoinColumn(name = "id_usuario"), inverseJoinColumns = @JoinColumn(name = "id_work_exp"))
-    private List<Skill> skills = new ArrayList<>();
+    @OneToMany(mappedBy = "skills")
+    private List<Skill> skills;
 
     // Tabla Project
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinTable(name = "User_Project", joinColumns = @JoinColumn(name = "id_usuario"), inverseJoinColumns = @JoinColumn(name = "id_project"))
-    private List<Project> projects = new ArrayList<>();
-
-    
+    @OneToMany(mappedBy = "projects")
+    private List<Project> projects;
 
 }

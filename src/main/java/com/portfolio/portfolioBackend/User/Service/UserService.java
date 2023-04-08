@@ -1,14 +1,12 @@
 package com.portfolio.portfolioBackend.User.Service;
 
-import java.util.List;
-
 import com.portfolio.portfolioBackend.User.Models.User;
 
 public interface UserService {
 
     /* GetData */
 
-    public List<User> getPersonalData(Integer id);
+    public User getPersonalData();
 
     /* AddData */
 
@@ -16,10 +14,10 @@ public interface UserService {
 
     /* ModifyData */
 
-    public User modifyPersonalData(Integer id, User user);
+    public User modifyPersonalData(User user);
 
     /* DeleteData */
 
-    public void deletePersonalData(Integer id);
+    public void deletePersonalData();
 
 }

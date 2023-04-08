@@ -1,11 +1,12 @@
 package com.portfolio.portfolioBackend.User.ServiceImp;
 
-import java.util.ArrayList;
-import java.util.List;
+//import java.util.ArrayList;
+//import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+//import com.portfolio.portfolioBackend.User.DTO.UserDTO;
 import com.portfolio.portfolioBackend.User.Models.User;
 import com.portfolio.portfolioBackend.User.Repository.UserRepository;
 import com.portfolio.portfolioBackend.User.Service.UserService;
@@ -34,11 +35,9 @@ public class UserServiceImp implements UserService {
     /* ReadData */
 
     @Override
-    public List<User> getPersonalData(Integer id) {
+    public User getPersonalData() {
 
-        User datos = userRepository.findById(id).get();
-
-        List<User> datosPersonales = new ArrayList<>();
+        User datos = userRepository.findAll().get(0);
 
         datos.setTechnologys(this.technologyService.getDataTechnology());
         datos.setEducations(this.educationService.getDataEducational());
@@ -46,9 +45,7 @@ public class UserServiceImp implements UserService {
         datos.setSkills(this.skillService.getDataSkill());
         datos.setProjects(this.projectService.getDataProject());
 
-        datosPersonales.add(datos);
-
-        return datosPersonales;
+        return datos;
     }
 
     /* AddData */
@@ -68,9 +65,9 @@ public class UserServiceImp implements UserService {
     /* ModifyData */
 
     @Override
-    public User modifyPersonalData(Integer id, User user) {
+    public User modifyPersonalData(User user) {
 
-        User userDb = this.userRepository.findById(id).get();
+        User userDb = this.userRepository.findById(0).get();
 
         userDb.setName(user.getName());
         userDb.setLast_name(user.getLast_name());
@@ -97,8 +94,8 @@ public class UserServiceImp implements UserService {
     /* DeleteData */
 
     @Override
-    public void deletePersonalData(Integer id) {
-        userRepository.deleteById(id);
+    public void deletePersonalData() {
+        userRepository.deleteById(0);
     }
 
 }
