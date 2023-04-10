@@ -53,12 +53,6 @@ public class UserServiceImp implements UserService {
     @Override
     public User addPersonalData(User user) {
 
-        user.setTechnologys(user.getTechnologys());
-        user.setEducations(user.getEducations());
-        user.setWorkExps(user.getWorkExps());
-        user.setSkills(user.getSkills());
-        user.setProjects(user.getProjects());
-
         return userRepository.save(user);
     }
 
@@ -75,10 +69,9 @@ public class UserServiceImp implements UserService {
         userDb.setAbout_me_r1(user.getAbout_me_r1());
         userDb.setAbout_me_r2(user.getAbout_me_r2());
 
-        // Campos User_name y User_password jamas deben ser seteados.
-
-        // userDb.setUser_name(user.getUser_name());
-        // userDb.setUser_password(user.getUser_password());
+        //login data
+        userDb.setUser_name(user.getUser_name());
+        userDb.setUser_password(user.getUser_password());
 
         userDb.setTechnologys(user.getTechnologys());
         userDb.setEducations(user.getEducations());

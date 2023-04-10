@@ -6,6 +6,7 @@ import java.util.List;
 import com.portfolio.portfolioBackend.User.Models.Education;
 import com.portfolio.portfolioBackend.User.Models.ExpWork;
 import com.portfolio.portfolioBackend.User.Models.Project;
+import com.portfolio.portfolioBackend.User.Models.Skill;
 import com.portfolio.portfolioBackend.User.Models.Technology;
 
 import lombok.*;
@@ -14,8 +15,6 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserDTO {
-
-    private Integer usuario_id;
 
     private String nombre;
 
@@ -29,11 +28,15 @@ public class UserDTO {
 
     private String user_password;
 
-    private List<ExpWork> expWork = new ArrayList<>();
+    private List<Technology> technologys = new ArrayList<>();
 
     private List<Education> education = new ArrayList<>();
+
+    private List<ExpWork> expWork = new ArrayList<>();
     
+    private List<Skill> skills = new ArrayList<>();
+
     private List<Project> project = new ArrayList<>();
 
-    private List<Technology> technology = new ArrayList<>();
+    
 }

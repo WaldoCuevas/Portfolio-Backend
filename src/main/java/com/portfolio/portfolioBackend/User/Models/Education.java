@@ -1,7 +1,7 @@
 package com.portfolio.portfolioBackend.User.Models;
 
 // Ignorar Json Infinitos
-//import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 //Librerias necesarias ->
 import jakarta.persistence.*;
@@ -28,26 +28,27 @@ public class Education {
     @Column(name = "qualification")
     private String qualification;
 
-    @Column(name = "description_r1")
-    private String description_r1;
+    @Column(name = "description_education_r1")
+    private String description_education_r1;
 
-    @Column(name = "description_r2")
-    private String description_r2;
+    @Column(name = "description_education_r2")
+    private String description_education_r2;
 
-    @Column(name = "description_r3")
-    private String description_r3;
+    @Column(name = "description_education_r3")
+    private String description_education_r3;
 
-    @Column(name = "description_r4")
-    private String description_r4;
+    @Column(name = "description_education_r4")
+    private String description_education_r4;
 
-    @Column(name = "start")
-    private String start;
+    @Column(name = "start_education")
+    private String start_education;
 
-    @Column(name = "end")
-    private String end;
+    @Column(name = "end_education")
+    private String end_education;
 
     @ManyToOne
-    @JoinColumn(name="usuario_id", nullable=false)
-    private User educations;
+    @JoinColumn(name="usuario_id", nullable=true)
+    @JsonIgnore
+    private User education;
 
 }

@@ -39,12 +39,12 @@ public class EducationServiceImp implements EducationService {
         educationDB.setEducation_image(education.getEducation_image());
         educationDB.setSchool(education.getSchool());
         educationDB.setQualification(education.getQualification());
-        educationDB.setDescription_r1(education.getDescription_r1());
-        educationDB.setDescription_r2(education.getDescription_r2());
-        educationDB.setDescription_r3(education.getDescription_r3());
-        educationDB.setDescription_r4(education.getDescription_r4());
-        educationDB.setStart(education.getStart());
-        educationDB.setEnd(education.getEnd());
+        educationDB.setDescription_education_r1(education.getDescription_education_r1());
+        educationDB.setDescription_education_r2(education.getDescription_education_r2());
+        educationDB.setDescription_education_r3(education.getDescription_education_r3());
+        educationDB.setDescription_education_r4(education.getDescription_education_r4());
+        educationDB.setStart_education(education.getStart_education());
+        educationDB.setEnd_education(education.getEnd_education());
 
         educationRepository.save(educationDB);
 

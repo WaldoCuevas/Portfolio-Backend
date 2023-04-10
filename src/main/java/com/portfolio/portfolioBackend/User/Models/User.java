@@ -42,23 +42,23 @@ public class User {
     private String about_me_r2;
 
     // Tabla Technology
-    @OneToMany(mappedBy = "technologys")
+    @OneToMany(mappedBy = "technology")
     private List<Technology> technologys;
 
     // Tabla Educacion
-    @OneToMany(mappedBy = "educations")
+    @OneToMany(mappedBy = "education")
     private List<Education> educations;
 
     // Tabla experiencia Laboral
-    @OneToMany(mappedBy = "workExps")
+    @OneToMany(mappedBy = "workExp")
     private List<ExpWork> workExps;
     
     //Tabla de Habilidades
-    @OneToMany(mappedBy = "skills")
+    @OneToMany(mappedBy = "skill")
     private List<Skill> skills;
 
     // Tabla Project
-    @OneToMany(mappedBy = "projects")
+    @OneToMany(mappedBy = "project")
     private List<Project> projects;
 
 }

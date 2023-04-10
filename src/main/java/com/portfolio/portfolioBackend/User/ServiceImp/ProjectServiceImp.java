@@ -40,8 +40,10 @@ public class ProjectServiceImp implements ProjectService {
         projectDb.setProject_title(project.getProject_title());
         projectDb.setProject_name(project.getProject_name());
         projectDb.setProject_description(project.getProject_description());
-        projectDb.setStart(project.getStart());
-        projectDb.setEnd(project.getEnd());
+        projectDb.setLink_project(project.getLink_project());
+        projectDb.setLink_github(project.getLink_github());
+        projectDb.setStart_project(project.getStart_project());
+        projectDb.setEnd_project(project.getEnd_project());
 
         projectRepository.save(projectDb);
 

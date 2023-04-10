@@ -1,7 +1,7 @@
 package com.portfolio.portfolioBackend.User.Models;
 
 // Ignorar Json Infinitos
-//import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 //Librerias necesarias ->
 import jakarta.persistence.*;
@@ -28,7 +28,20 @@ public class Technology {
     @Column(name = "description_technology_r2")
     private String description_technology_r2;
 
+    @Column(name = "badge_technology_1")
+    private String badge_technology_1;
+
+    @Column(name = "badge_technology_2")
+    private String badge_technology_2;
+
+    @Column(name = "badge_technology_3")
+    private String badge_technology_3;
+
+    @Column(name = "badge_technology_4")
+    private String badge_technology_4;
+
     @ManyToOne
-    @JoinColumn(name="usuario_id", nullable=false)
-    private User technologys;
+    @JoinColumn(name="usuario_id", nullable=true)
+    @JsonIgnore
+    private User technology;
 }

@@ -1,7 +1,7 @@
 package com.portfolio.portfolioBackend.User.Models;
 
 // Ignorar Json Infinitos
-//import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 //Librerias necesarias ->
 import jakarta.persistence.*;
@@ -31,22 +31,23 @@ public class ExpWork {
     @Column(name = "job")
     private String job;
 
-    @Column(name = "description_r1")
-    private String description_r1;
+    @Column(name = "description_work_exp_r1")
+    private String description_work_exp_r1;
 
-    @Column(name = "description_r2")
-    private String description_r2;
+    @Column(name = "description_work_exp_r2")
+    private String description_work_exp_r2;
 
-    @Column(name = "description_r3")
-    private String description_r3;
+    @Column(name = "description_work_exp_r3")
+    private String description_work_exp_r3;
 
-    @Column(name = "start")
-    private String start;
+    @Column(name = "start_work_exp")
+    private String start_work_exp;
     
-    @Column(name = "end")
-    private String end;
+    @Column(name = "end_work_exp")
+    private String end_work_exp;
 
     @ManyToOne
-    @JoinColumn(name="usuario_id", nullable=false)
-    private User workExps;
+    @JoinColumn(name="usuario_id", nullable=true)
+    @JsonIgnore
+    private User workExp;
 }

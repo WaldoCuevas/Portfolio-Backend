@@ -1,0 +1,648 @@
+{
+	"info": {
+		"_postman_id": "762c03e6-c872-48ec-83ae-e48c17f61f06",
+		"name": "Portfolio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21239923"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"item": [
+				{
+					"name": "getPersonalData",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/getPersonalData",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"getPersonalData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDataTechnology",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/getDataTechnology",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"getDataTechnology"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDataEducation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/getDataEducation",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"getDataEducation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDataWork",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/getDataWork",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"getDataWork"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDataSkill",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/getDataSkill",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"getDataSkill"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDataProject",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/getDataProject",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"getDataProject"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "addPersonalData",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Waldo\",\r\n    \"last_name\": \"Cuevas\",\r\n    \"email\": \"CuevasWaldo5@gmail.com\",\r\n    \"user_name\": \"WaldoCuevas\",\r\n    \"user_password\": \"123456789\",\r\n    \"about_me_r1\": \"Soy una persona autodictacta y comprometida con los trabajos querealizo. Empeze a programar en el 2021 cuando inicie mi carrera de Programación en la Universidad Tecnologica Nacional - FRVT.\",\r\n    \"about_me_r2\": \"A finales del año 2022 me recibí de Técnico Universitario en Programación. Personalmente siento interés por el mundo de la informática y el rubro IT. Entre mis preferencias me gustan las áreas relacionadas al Backend sobre el Frontend.\",\r\n    \"technologys\": [\r\n        {\r\n            \"name_technology\": \"FrontEnd Dev\",\r\n            \"description_technology_r1\": \"Como FrontEnd Developer me encargo de diseñar la interfaz de usuario (UI) de los sitios web. Es una de las piezas claves de un proyecto digital porque es el responsable de la experiencia de usuario (UX), y se desenvuelve del lado del cliente.\",\r\n            \"description_technology_r2\": \"\",\r\n            \"badge_technology_1\":\"HTML\",\r\n            \"badge_technology_2\":\"CSS\",\r\n            \"badge_technology_3\":\"JS\",\r\n            \"badge_technology_4\":\"Angular\"\r\n        }\r\n    ],\r\n    \"educations\": [\r\n        {\r\n            \"education_image\": \"null\",\r\n            \"school\": \"Universidad Tecnologica Nacional\",\r\n            \"qualification\": \"Tecnico Universitario en Programación\",\r\n            \"description_education_r1\": \"Esta carrera me ofreció conocimientos y prácticas intensivas que me permitieron analizar un problema de procesamiento de datos y desarrollar una solución en un lenguaje apropiado utilizando un computador.\",\r\n            \"description_education_r2\": \"\",\r\n            \"description_education_r3\": \"\",\r\n            \"description_education_r4\": \"\",\r\n            \"start_education\": \"2021\",\r\n            \"end_education\": \"2022\"\r\n        }\r\n    ],\r\n    \"workExps\": [\r\n        {\r\n            \"work_image\": \"null\",\r\n            \"workplace\": \"Escuela Especial N° 2045 - Dr. Oscar Oñativia\",\r\n            \"workstation\": \"Desarrollador\",\r\n            \"job\": \"Comunicate\",\r\n            \"description_work_exp_r1\": \"Desarrollo en equipo de una aplicación que facilita la comunicación entre el equipo docente y los alumnos\",\r\n            \"description_work_exp_r2\": \"Instalación del software en los dispositivos de la institución\",\r\n            \"description_work_exp_r3\": \"Mantenimiento al software desarrollado\",\r\n            \"start_work_exp\": \"2022\",\r\n            \"end_work_exp\": \"2022\"\r\n        }\r\n    ],\r\n    \"skills\": [\r\n        {\r\n            \"skill_image\": \"null\",\r\n            \"skills_name\": \"HTML\",\r\n            \"skill_porcent\": \"90.0\"\r\n        }\r\n    ],\r\n    \"projects\": [\r\n        {\r\n            \"project_image\": \"null\",\r\n            \"project_title\": \"Application Web\",\r\n            \"project_name\": \"StockTracking\",\r\n            \"project_description\": \"Desarrollo de una aplicación que permite realizar el seguimiento de Stock de una empresa ficticia.\",\r\n            \"link_project\": \"null\",\r\n            \"link_github\": \"https://github.com/WaldoCuevas/StockTracking\",\r\n            \"start_project\": \"2022\",\r\n            \"end_project\": \"2023\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/addPersonalData",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"addPersonalData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addDataTechnology",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name_technology\": \"FrontEnd Dev\",\r\n    \"description_technology_r1\": \"Como FrontEnd Developer me encargo de diseñar la interfaz de usuario (UI) de los sitios web. Es una de las piezas claves de un proyecto digital porque es el responsable de la experiencia de usuario (UX), y se desenvuelve del lado del cliente.\",\r\n    \"description_technology_r2\": \"\",\r\n    \"badge_technology_1\": \"HTML\",\r\n    \"badge_technology_2\": \"CSS\",\r\n    \"badge_technology_3\": \"JS\",\r\n    \"badge_technology_4\": \"Angular\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/addDataTechnology",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"addDataTechnology"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addDataEducation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"education_image\": \"null\",\r\n    \"school\": \"Universidad Tecnologica Nacional\",\r\n    \"qualification\": \"Tecnico Universitario en Programación\",\r\n    \"description_education_r1\": \"Esta carrera me ofreció conocimientos y prácticas intensivas que me permitieron analizar un problema de procesamiento de datos y desarrollar una solución en un lenguaje apropiado utilizando un computador.\",\r\n    \"description_education_r2\": \"\",\r\n    \"description_education_r3\": \"\",\r\n    \"description_education_r4\": \"\",\r\n    \"start_education\": \"2021\",\r\n    \"end_education\": \"2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/addDataEducation",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"addDataEducation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addDataWork",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"work_image\": \"null\",\r\n    \"workplace\": \"Escuela Especial N° 2045 - Dr. Oscar Oñativia\",\r\n    \"workstation\": \"Desarrollador\",\r\n    \"job\": \"Comunicate\",\r\n    \"description_work_exp_r1\": \"Desarrollo en equipo de una aplicación que facilita la comunicación entre el equipo docente y los alumnos\",\r\n    \"description_work_exp_r2\": \"Instalación del software en los dispositivos de la institución\",\r\n    \"description_work_exp_r3\": \"Mantenimiento al software desarrollado\",\r\n    \"start_work_exp\": \"2022\",\r\n    \"end_work_exp\": \"2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/addDataWork",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"addDataWork"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addDataSkill",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"skill_id\": null,\r\n    \"skill_image\": \"null\",\r\n    \"skills_name\": \"HTML\",\r\n    \"skill_porcent\": 90.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/addDataSkill",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"addDataSkill"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addDataProject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"project_image\": \"null\",\r\n    \"project_title\": \"Application Web\",\r\n    \"project_name\": \"StockTracking\",\r\n    \"project_description\": \"Desarrollo de una aplicación que permite realizar el seguimiento de Stock de una empresa ficticia.\",\r\n    \"link_project\": \"null\",\r\n    \"link_github\": \"https://github.com/WaldoCuevas/StockTracking\",\r\n    \"start_project\": \"2022\",\r\n    \"end_project\": \"2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/addDataProject",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"addDataProject"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Put",
+			"item": [
+				{
+					"name": "modifyPersonalData",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 1,\r\n    \"name\": \"Waldo\",\r\n    \"last_name\": \"Cuevas\",\r\n    \"email\": \"CuevasWaldo5@gmail.com\",\r\n    \"user_name\": \"WaldoCuevas\",\r\n    \"user_password\": \"123456789\",\r\n    \"about_me_r1\": \"Soy una persona autodictacta y comprometida con los trabajos querealizo. Empeze a programar en el 2021 cuando inicie mi carrera de Programación en la Universidad Tecnologica Nacional - FRVT.\",\r\n    \"about_me_r2\": \"A finales del año 2022 me recibí de Técnico Universitario en Programación. Personalmente siento interés por el mundo de la informática y el rubro IT. Entre mis preferencias me gustan las áreas relacionadas al Backend sobre el Frontend.\",\r\n    \"technologys\": [],\r\n    \"educations\": [],\r\n    \"workExps\": [],\r\n    \"skills\": [],\r\n    \"projects\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/modifyPersonalData",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"modifyPersonalData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifyDataTechnology",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name_technology\": \"Backend\",\r\n        \"description_technology_r1\": \"asdsad\",\r\n        \"description_technology_r2\": \"dasdasd\",\r\n        \"badge_technology_1\": \"Java\",\r\n        \"badge_technology_2\": \"MySql\",\r\n        \"badge_technology_3\": \"MariaDB\",\r\n        \"badge_technology_4\": \"Spring\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/modifyDataTechnology/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"modifyDataTechnology",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifyDataEducation",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"education_image\": \"null\",\r\n    \"school\": \"Universidad Tecnologica Nacional\",\r\n    \"qualification\": \"Tecnico Universitario en Programación\",\r\n    \"description_r1\": \"Esta carrera me ofreció conocimientos y prácticas intensivas que me permitieron analizar un problema de procesamiento de datos y desarrollar una solución en un lenguaje apropiado utilizando un computador.\",\r\n    \"description_r2\": \"\",\r\n    \"description_r3\": \"\",\r\n    \"description_r4\": \"\",\r\n    \"inicio\": \"2021\",\r\n    \"fin\": \"2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/modifyDataEducation/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"modifyDataEducation",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifyDataWork",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"work_image\": \"null\",\r\n    \"workplace\": \"Escuela Especial N° 2045 - Dr. Oscar Oñativia\",\r\n    \"workstation\": \"Desarrollador\",\r\n    \"job\": \"Comunicate\",\r\n    \"descripcion_r1\": \"Desarrollo en equipo de una aplicación que facilita la comunicación entre el equipo docente y los alumnos\",\r\n    \"descripcion_r2\": \"Instalación del software en los dispositivos de la institución\",\r\n    \"descripcion_r3\": \"Mantenimiento al software desarrollado\",\r\n    \"inicio\": 2022,\r\n    \"fin\": 2022\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/modifyDataWork/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"modifyDataWork",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifyDataSkill",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"skill_image\": \"asd\",\r\n    \"skills_name\": \"HTML\",\r\n    \"skill_porcent\": 90.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/modifyDataSkill/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"modifyDataSkill",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifyDataProject",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"project_image\": \"null\",\r\n    \"project_title\": \"Application Web\",\r\n    \"project_name\": \"StockTracking\",\r\n    \"project_description\": \"Desarrollo de una aplicación que permite realizar el seguimiento de Stock de una empresa ficticia.\",\r\n    \"link_project\": \"null\",\r\n    \"link_github\": \"https://github.com/WaldoCuevas/StockTracking\",\r\n    \"inicio\": \"2022\",\r\n    \"fin\": \"2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/modifyDataProject/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"modifyDataProject",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"item": [
+				{
+					"name": "deletePersonalData",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/deletePersonalData",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deletePersonalData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDataTechnology",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/deleteDataTechnology/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deleteDataTechnology",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDataEducation",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/deleteDataEducation/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deleteDataEducation",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDataWork",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/deleteDataWork/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deleteDataWork",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDataSkill",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/deleteDataSkill/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deleteDataSkill",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDataProject",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/deleteDataProject/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deleteDataProject",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

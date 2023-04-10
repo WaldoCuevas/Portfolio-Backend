@@ -1,5 +1,7 @@
 package com.portfolio.portfolioBackend.User.Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 // Ignorar Json Infinitos
 //import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -28,6 +30,7 @@ public class Skill {
     private Float skill_porcent;
 
     @ManyToOne
-    @JoinColumn(name="usuario_id", nullable=false)
-    private User skills;
+    @JoinColumn(name="usuario_id", nullable=true)
+    @JsonIgnore
+    private User skill;
 }

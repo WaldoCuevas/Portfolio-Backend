@@ -40,10 +40,11 @@ public class ExpWorkServiceImp implements ExpWorkService {
         expWorkDB.setWorkplace(expWork.getWorkplace());
         expWorkDB.setWorkstation(expWork.getWorkstation());
         expWorkDB.setJob(expWork.getJob());
-        expWorkDB.setDescription_r1(expWork.getDescription_r1());
-        expWorkDB.setDescription_r2(expWork.getDescription_r2());
-        expWorkDB.setStart(expWork.getStart());
-        expWorkDB.setEnd(expWork.getEnd());
+        expWorkDB.setDescription_work_exp_r1(expWork.getDescription_work_exp_r1());
+        expWorkDB.setDescription_work_exp_r2(expWork.getDescription_work_exp_r2());
+        expWorkDB.setDescription_work_exp_r3(expWork.getDescription_work_exp_r3());
+        expWorkDB.setStart_work_exp(expWork.getStart_work_exp());
+        expWorkDB.setEnd_work_exp(expWork.getEnd_work_exp());
 
         expWorkRepository.save(expWorkDB);
 
