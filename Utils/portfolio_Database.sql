@@ -139,7 +139,7 @@ INSERT INTO `tecnologias` (`tecnology_id`, `badge_technology_1`, `badge_technolo
 -- Estructura de tabla para la tabla `usuario`
 --
 
-CREATE TABLE `usuario` (
+CREATE TABLE `persona` (
   `user_id` int(11) NOT NULL,
   `about_me_r1` varchar(255) DEFAULT NULL,
   `about_me_r2` varchar(255) DEFAULT NULL,
@@ -154,7 +154,7 @@ CREATE TABLE `usuario` (
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`user_id`, `about_me_r1`, `about_me_r2`, `email`, `last_name`, `name`, `user_name`, `user_password`) VALUES
+INSERT INTO `persona` (`user_id`, `about_me_r1`, `about_me_r2`, `email`, `last_name`, `name`, `user_name`, `user_password`) VALUES
 (1, 'Soy una persona autodictacta y comprometida con los trabajos querealizo. Empeze a programar en el 2021 cuando inicie mi carrera de Programación en la Universidad Tecnologica Nacional - FRVT.', 'A finales del año 2022 me recibí de Técnico Universitario en Programación. Personalmente siento interés por el mundo de la informática y el rubro IT. Entre mis preferencias me gustan las áreas relacionadas al Backend sobre el Frontend.', 'CuevasWaldo5@gmail.com', 'Cuevas', 'Waldo', 'WaldoCuevas', '123456789');
 
 -- --------------------------------------------------------
