@@ -46,5 +46,5 @@ public class Project {
     @ManyToOne
     @JoinColumn(name="usuario_id", nullable=true)
     @JsonIgnore
-    private Persona project;
+    private Person project;
 }

@@ -49,5 +49,5 @@ public class ExpWork {
     @ManyToOne
     @JoinColumn(name="usuario_id", nullable=true)
     @JsonIgnore
-    private Persona workExp;
+    private Person workExp;
 }

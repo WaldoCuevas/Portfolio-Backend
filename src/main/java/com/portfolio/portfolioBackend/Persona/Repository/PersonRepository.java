@@ -3,8 +3,8 @@ package com.portfolio.portfolioBackend.Persona.Repository;
 //  Anotacion para hacer esta interfaz un Repositorio
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.portfolio.portfolioBackend.Persona.Models.Persona;
+import com.portfolio.portfolioBackend.Persona.Models.Person;
 
-public interface PersonaRepository extends JpaRepository<Persona, Integer> {
+public interface PersonRepository extends JpaRepository<Person, Integer> {
     
 }

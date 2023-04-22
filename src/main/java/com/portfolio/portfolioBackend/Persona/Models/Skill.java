@@ -32,5 +32,5 @@ public class Skill {
     @ManyToOne
     @JoinColumn(name="usuario_id", nullable=true)
     @JsonIgnore
-    private Persona skill;
+    private Person skill;
 }

@@ -49,6 +49,6 @@ public class Education {
     @ManyToOne
     @JoinColumn(name="usuario_id", nullable=true)
     @JsonIgnore
-    private Persona education;
+    private Person education;
 
 }

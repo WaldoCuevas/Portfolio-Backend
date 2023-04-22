@@ -38,6 +38,10 @@ public class TechnologyServiceImp implements TechnologyService {
         technologyDb.setName_technology(technology.getName_technology());
         technologyDb.setDescription_technology_r1(technology.getDescription_technology_r1());
         technologyDb.setDescription_technology_r2(technology.getDescription_technology_r2());
+        technologyDb.setBadge_technology_1(technology.getBadge_technology_1());
+        technologyDb.setBadge_technology_2(technology.getBadge_technology_2());
+        technologyDb.setBadge_technology_3(technology.getBadge_technology_3());
+        technologyDb.setBadge_technology_4(technology.getBadge_technology_4());
 
         technologyRepository.save(technologyDb);
 

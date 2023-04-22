@@ -11,9 +11,31 @@
 			"item": [
 				{
 					"name": "getPersonalData",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY4MTg1Mjg4MiwiZXhwIjoxNjgxODg4ODgyfQ.fee70Xc7plCmySRuzLR1JaCkZCpnRGpR_yfe70A_BbPHlKIFm-UidH2LoNOyIbrX",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "http://localhost:8080/api/getPersonalData",
 							"protocol": "http",
@@ -32,8 +54,25 @@
 				{
 					"name": "getDataTechnology",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY4MTQyNTI2MSwiZXhwIjoxNjgxNDYxMjYxfQ.DV0UAez-BlS9bxrxFiI7QI5v-kcX-5MObFvAQylJ4kXIKlB2qExgHVfB_C8Tkup7",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
 						"url": {
 							"raw": "http://localhost:8080/api/getDataTechnology",
 							"protocol": "http",
@@ -52,6 +91,16 @@
 				{
 					"name": "getDataEducation",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY4MTQyNTY5MiwiZXhwIjoxNjgxNDYxNjkyfQ.3E2ZJUmh7gmbIcwAwY9EpflkTFi7yqVZCSPAoskXyE_nhXUoVKRyCXRHVPaNrlaJ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -72,6 +121,16 @@
 				{
 					"name": "getDataWork",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY4MTY3MDMwMiwiZXhwIjoxNjgxNzA2MzAyfQ.3vApJH28sMDgWUeCS_fxN_rn4Av_sbgrF-GUQGZuRjiAfbZmj-f6UsCtiGAXXWMp",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -92,6 +151,16 @@
 				{
 					"name": "getDataSkill",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY4MTQyNTY5MiwiZXhwIjoxNjgxNDYxNjkyfQ.3E2ZJUmh7gmbIcwAwY9EpflkTFi7yqVZCSPAoskXyE_nhXUoVKRyCXRHVPaNrlaJ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -112,6 +181,16 @@
 				{
 					"name": "getDataProject",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY4MTQyNTY5MiwiZXhwIjoxNjgxNDYxNjkyfQ.3E2ZJUmh7gmbIcwAwY9EpflkTFi7yqVZCSPAoskXyE_nhXUoVKRyCXRHVPaNrlaJ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -137,11 +216,21 @@
 				{
 					"name": "addPersonalData",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY4MTQyNTI2MSwiZXhwIjoxNjgxNDYxMjYxfQ.DV0UAez-BlS9bxrxFiI7QI5v-kcX-5MObFvAQylJ4kXIKlB2qExgHVfB_C8Tkup7",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Waldo\",\r\n    \"last_name\": \"Cuevas\",\r\n    \"email\": \"CuevasWaldo5@gmail.com\",\r\n    \"user_name\": \"WaldoCuevas\",\r\n    \"user_password\": \"123456789\",\r\n    \"about_me_r1\": \"Soy una persona autodictacta y comprometida con los trabajos querealizo. Empeze a programar en el 2021 cuando inicie mi carrera de Programación en la Universidad Tecnologica Nacional - FRVT.\",\r\n    \"about_me_r2\": \"A finales del año 2022 me recibí de Técnico Universitario en Programación. Personalmente siento interés por el mundo de la informática y el rubro IT. Entre mis preferencias me gustan las áreas relacionadas al Backend sobre el Frontend.\",\r\n    \"technologys\": [\r\n        {\r\n            \"name_technology\": \"FrontEnd Dev\",\r\n            \"description_technology_r1\": \"Como FrontEnd Developer me encargo de diseñar la interfaz de usuario (UI) de los sitios web. Es una de las piezas claves de un proyecto digital porque es el responsable de la experiencia de usuario (UX), y se desenvuelve del lado del cliente.\",\r\n            \"description_technology_r2\": \"\",\r\n            \"badge_technology_1\":\"HTML\",\r\n            \"badge_technology_2\":\"CSS\",\r\n            \"badge_technology_3\":\"JS\",\r\n            \"badge_technology_4\":\"Angular\"\r\n        }\r\n    ],\r\n    \"educations\": [\r\n        {\r\n            \"education_image\": \"null\",\r\n            \"school\": \"Universidad Tecnologica Nacional\",\r\n            \"qualification\": \"Tecnico Universitario en Programación\",\r\n            \"description_education_r1\": \"Esta carrera me ofreció conocimientos y prácticas intensivas que me permitieron analizar un problema de procesamiento de datos y desarrollar una solución en un lenguaje apropiado utilizando un computador.\",\r\n            \"description_education_r2\": \"\",\r\n            \"description_education_r3\": \"\",\r\n            \"description_education_r4\": \"\",\r\n            \"start_education\": \"2021\",\r\n            \"end_education\": \"2022\"\r\n        }\r\n    ],\r\n    \"workExps\": [\r\n        {\r\n            \"work_image\": \"null\",\r\n            \"workplace\": \"Escuela Especial N° 2045 - Dr. Oscar Oñativia\",\r\n            \"workstation\": \"Desarrollador\",\r\n            \"job\": \"Comunicate\",\r\n            \"description_work_exp_r1\": \"Desarrollo en equipo de una aplicación que facilita la comunicación entre el equipo docente y los alumnos\",\r\n            \"description_work_exp_r2\": \"Instalación del software en los dispositivos de la institución\",\r\n            \"description_work_exp_r3\": \"Mantenimiento al software desarrollado\",\r\n            \"start_work_exp\": \"2022\",\r\n            \"end_work_exp\": \"2022\"\r\n        }\r\n    ],\r\n    \"skills\": [\r\n        {\r\n            \"skill_image\": \"null\",\r\n            \"skills_name\": \"HTML\",\r\n            \"skill_porcent\": \"90.0\"\r\n        }\r\n    ],\r\n    \"projects\": [\r\n        {\r\n            \"project_image\": \"null\",\r\n            \"project_title\": \"Application Web\",\r\n            \"project_name\": \"StockTracking\",\r\n            \"project_description\": \"Desarrollo de una aplicación que permite realizar el seguimiento de Stock de una empresa ficticia.\",\r\n            \"link_project\": \"null\",\r\n            \"link_github\": \"https://github.com/WaldoCuevas/StockTracking\",\r\n            \"start_project\": \"2022\",\r\n            \"end_project\": \"2023\"\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"name\": \"Waldo\",\r\n    \"last_name\": \"Cuevas\",\r\n    \"user_image\": null,\r\n    \"email\": \"CuevasWaldo5@gmail.com\",\r\n    \"user_name\": \"WaldoCuevas\",\r\n    \"user_password\": \"123456789\",\r\n    \"about_me_r1\": \"Soy una persona autodictacta y comprometida con los trabajos querealizo. Empeze a programar en el 2021 cuando inicie mi carrera de Programación en la Universidad Tecnologica Nacional - FRVT.\",\r\n    \"about_me_r2\": \"A finales del año 2022 me recibí de Técnico Universitario en Programación. Personalmente siento interés por el mundo de la informática y el rubro IT. Entre mis preferencias me gustan las áreas relacionadas al Backend sobre el Frontend.\",\r\n    \"technologys\": [\r\n        {\r\n            \"name_technology\": \"FrontEnd Dev\",\r\n            \"description_technology_r1\": \"Como FrontEnd Developer me encargo de diseñar la interfaz de usuario (UI) de los sitios web. Es una de las piezas claves de un proyecto digital porque es el responsable de la experiencia de usuario (UX), y se desenvuelve del lado del cliente.\",\r\n            \"description_technology_r2\": \"\",\r\n            \"badge_technology_1\":\"HTML\",\r\n            \"badge_technology_2\":\"CSS\",\r\n            \"badge_technology_3\":\"JS\",\r\n            \"badge_technology_4\":\"Angular\"\r\n        }\r\n    ],\r\n    \"educations\": [\r\n        {\r\n            \"education_image\": \"null\",\r\n            \"school\": \"Universidad Tecnologica Nacional\",\r\n            \"qualification\": \"Tecnico Universitario en Programación\",\r\n            \"description_education_r1\": \"Esta carrera me ofreció conocimientos y prácticas intensivas que me permitieron analizar un problema de procesamiento de datos y desarrollar una solución en un lenguaje apropiado utilizando un computador.\",\r\n            \"description_education_r2\": \"\",\r\n            \"description_education_r3\": \"\",\r\n            \"description_education_r4\": \"\",\r\n            \"start_education\": \"2021\",\r\n            \"end_education\": \"2022\"\r\n        }\r\n    ],\r\n    \"workExps\": [\r\n        {\r\n            \"work_image\": \"null\",\r\n            \"workplace\": \"Escuela Especial N° 2045 - Dr. Oscar Oñativia\",\r\n            \"workstation\": \"Desarrollador\",\r\n            \"job\": \"Comunicate\",\r\n            \"description_work_exp_r1\": \"Desarrollo en equipo de una aplicación que facilita la comunicación entre el equipo docente y los alumnos\",\r\n            \"description_work_exp_r2\": \"Instalación del software en los dispositivos de la institución\",\r\n            \"description_work_exp_r3\": \"Mantenimiento al software desarrollado\",\r\n            \"start_work_exp\": \"2022\",\r\n            \"end_work_exp\": \"2022\"\r\n        }\r\n    ],\r\n    \"skills\": [\r\n        {\r\n            \"skill_image\": \"null\",\r\n            \"skills_name\": \"HTML\",\r\n            \"skill_porcent\": \"90.0\"\r\n        }\r\n    ],\r\n    \"projects\": [\r\n        {\r\n            \"project_image\": \"null\",\r\n            \"project_title\": \"Application Web\",\r\n            \"project_name\": \"StockTracking\",\r\n            \"project_description\": \"Desarrollo de una aplicación que permite realizar el seguimiento de Stock de una empresa ficticia.\",\r\n            \"link_project\": \"null\",\r\n            \"link_github\": \"https://github.com/WaldoCuevas/StockTracking\",\r\n            \"start_project\": \"2022\",\r\n            \"end_project\": \"2023\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -166,11 +255,21 @@
 				{
 					"name": "addDataTechnology",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY4MTQyNTY5MiwiZXhwIjoxNjgxNDYxNjkyfQ.3E2ZJUmh7gmbIcwAwY9EpflkTFi7yqVZCSPAoskXyE_nhXUoVKRyCXRHVPaNrlaJ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name_technology\": \"FrontEnd Dev\",\r\n    \"description_technology_r1\": \"Como FrontEnd Developer me encargo de diseñar la interfaz de usuario (UI) de los sitios web. Es una de las piezas claves de un proyecto digital porque es el responsable de la experiencia de usuario (UX), y se desenvuelve del lado del cliente.\",\r\n    \"description_technology_r2\": \"\",\r\n    \"badge_technology_1\": \"HTML\",\r\n    \"badge_technology_2\": \"CSS\",\r\n    \"badge_technology_3\": \"JS\",\r\n    \"badge_technology_4\": \"Angular\"\r\n}",
+							"raw": "{\r\n    \"name_technology\": \"DevOps\",\r\n    \"description_technology_r1\": \"DevOps es un marco de trabajo y una filosofía en constante evolución que promueve un mejor desarrollo de aplicaciones en menos tiempo y la rápida publicación de nuevas o revisadas funciones de software o productos para los clientes.\",\r\n    \"description_technology_r2\": \"\",\r\n    \"badge_technology_1\": \"Scrum\",\r\n    \"badge_technology_2\": \"\",\r\n    \"badge_technology_3\": \"\",\r\n    \"badge_technology_4\": \"\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -195,11 +294,21 @@
 				{
 					"name": "addDataEducation",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY4MTQyNTY5MiwiZXhwIjoxNjgxNDYxNjkyfQ.3E2ZJUmh7gmbIcwAwY9EpflkTFi7yqVZCSPAoskXyE_nhXUoVKRyCXRHVPaNrlaJ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"education_image\": \"null\",\r\n    \"school\": \"Universidad Tecnologica Nacional\",\r\n    \"qualification\": \"Tecnico Universitario en Programación\",\r\n    \"description_education_r1\": \"Esta carrera me ofreció conocimientos y prácticas intensivas que me permitieron analizar un problema de procesamiento de datos y desarrollar una solución en un lenguaje apropiado utilizando un computador.\",\r\n    \"description_education_r2\": \"\",\r\n    \"description_education_r3\": \"\",\r\n    \"description_education_r4\": \"\",\r\n    \"start_education\": \"2021\",\r\n    \"end_education\": \"2022\"\r\n}",
+							"raw": "{\r\n    \"education_image\": \"null\",\r\n    \"school\": \"Argentina Programa - 2da Etapa\",\r\n    \"qualification\": \"#YoProgramo\",\r\n    \"description_education_r1\": \"En esta etapa aprendi sobre:\",\r\n    \"description_education_r2\": \"Las herramientas de un dev FrontEnd.\",\r\n    \"description_education_r3\": \"Las herramientas de un dev BackEnd.\",\r\n    \"description_education_r4\": \"Conocimiento en DevOps y Testing.\",\r\n    \"start_education\": \"2022\",\r\n    \"end_education\": \"2023\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -224,11 +333,21 @@
 				{
 					"name": "addDataWork",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY4MTY3MDMwMiwiZXhwIjoxNjgxNzA2MzAyfQ.3vApJH28sMDgWUeCS_fxN_rn4Av_sbgrF-GUQGZuRjiAfbZmj-f6UsCtiGAXXWMp",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"work_image\": \"null\",\r\n    \"workplace\": \"Escuela Especial N° 2045 - Dr. Oscar Oñativia\",\r\n    \"workstation\": \"Desarrollador\",\r\n    \"job\": \"Comunicate\",\r\n    \"description_work_exp_r1\": \"Desarrollo en equipo de una aplicación que facilita la comunicación entre el equipo docente y los alumnos\",\r\n    \"description_work_exp_r2\": \"Instalación del software en los dispositivos de la institución\",\r\n    \"description_work_exp_r3\": \"Mantenimiento al software desarrollado\",\r\n    \"start_work_exp\": \"2022\",\r\n    \"end_work_exp\": \"2022\"\r\n}",
+							"raw": "{\r\n    \"work_image\": \"https://files.deply.dev/files/a865d63d-8f53-422c-bda4-892891a9fc25-17754f74-02a8-47df-a1bf-9d9ba2636a40-escuela_especial_n°_2045.jpg\",\r\n    \"workplace\": \"Escuela Especial N° 2045 - Dr. Oscar Oñativia\",\r\n    \"workstation\": \"Desarrollador\",\r\n    \"job\": \"Comunicate\",\r\n    \"description_work_exp_r1\": \"Desarrollo en equipo de una aplicación que facilita la comunicación entre el equipo docente y los alumnos\",\r\n    \"description_work_exp_r2\": \"Instalación del software en los dispositivos de la institución\",\r\n    \"description_work_exp_r3\": \"Mantenimiento al software desarrollado\",\r\n    \"start_work_exp\": \"2022\",\r\n    \"end_work_exp\": \"2022\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -253,11 +372,21 @@
 				{
 					"name": "addDataSkill",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY4MTQyNTY5MiwiZXhwIjoxNjgxNDYxNjkyfQ.3E2ZJUmh7gmbIcwAwY9EpflkTFi7yqVZCSPAoskXyE_nhXUoVKRyCXRHVPaNrlaJ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"skill_id\": null,\r\n    \"skill_image\": \"null\",\r\n    \"skills_name\": \"HTML\",\r\n    \"skill_porcent\": 90.0\r\n}",
+							"raw": "{\r\n    \"skill_image\": \"null\",\r\n    \"skills_name\": \"Angular\",\r\n    \"skill_porcent\": 80\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -282,11 +411,21 @@
 				{
 					"name": "addDataProject",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY4MTQyNTY5MiwiZXhwIjoxNjgxNDYxNjkyfQ.3E2ZJUmh7gmbIcwAwY9EpflkTFi7yqVZCSPAoskXyE_nhXUoVKRyCXRHVPaNrlaJ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"project_image\": \"null\",\r\n    \"project_title\": \"Application Web\",\r\n    \"project_name\": \"StockTracking\",\r\n    \"project_description\": \"Desarrollo de una aplicación que permite realizar el seguimiento de Stock de una empresa ficticia.\",\r\n    \"link_project\": \"null\",\r\n    \"link_github\": \"https://github.com/WaldoCuevas/StockTracking\",\r\n    \"start_project\": \"2022\",\r\n    \"end_project\": \"2023\"\r\n}",
+							"raw": "{\r\n    \"project_image\": \"null\",\r\n    \"project_title\": \"Web\",\r\n    \"project_name\": \"Portfolio Web\",\r\n    \"project_description\": \"Realización de un portafolio web de parte de Argentina Programa.\",\r\n    \"link_project\": \"https://waldocuevas.github.io\",\r\n    \"link_github\": \"https://github.com/WaldoCuevas/waldocuevas.github.io\",\r\n    \"start_project\": \"2022\",\r\n    \"end_project\": \"2023\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -316,11 +455,21 @@
 				{
 					"name": "modifyPersonalData",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY4MTkzOTI0MCwiZXhwIjoxNjgxOTc1MjQwfQ.z_y2IFP-RGWrKJLr7arVcFbuAJ9sIw8K0Wgm8CXErc7oio7EG6786eTRZLaATCKR",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"user_id\": 1,\r\n    \"name\": \"Waldo\",\r\n    \"last_name\": \"Cuevas\",\r\n    \"email\": \"CuevasWaldo5@gmail.com\",\r\n    \"user_name\": \"WaldoCuevas\",\r\n    \"user_password\": \"123456789\",\r\n    \"about_me_r1\": \"Soy una persona autodictacta y comprometida con los trabajos querealizo. Empeze a programar en el 2021 cuando inicie mi carrera de Programación en la Universidad Tecnologica Nacional - FRVT.\",\r\n    \"about_me_r2\": \"A finales del año 2022 me recibí de Técnico Universitario en Programación. Personalmente siento interés por el mundo de la informática y el rubro IT. Entre mis preferencias me gustan las áreas relacionadas al Backend sobre el Frontend.\",\r\n    \"technologys\": [],\r\n    \"educations\": [],\r\n    \"workExps\": [],\r\n    \"skills\": [],\r\n    \"projects\": []\r\n}",
+							"raw": "{\r\n    \"user_id\": 1,\r\n    \"name\": \"Waldasdo\",\r\n    \"last_name\": \"Cuevas\",\r\n    \"user_image\": null,\r\n    \"email\": \"CuevasWaldo5@gmail.com\",\r\n    \"user_name\": \"WaldoCuevas\",\r\n    \"user_password\": \"123456789\",\r\n    \"about_me_r1\": \"Soy una persona autodictacta y comprometida con los trabajos querealizo. Empeze a programar en el 2021 cuando inicie mi carrera de Programación en la Universidad Tecnologica Nacional - FRVT.\",\r\n    \"about_me_r2\": \"A finales del año 2022 me recibí de Técnico Universitario en Programación. Personalmente siento interés por el mundo de la informática y el rubro IT. Entre mis preferencias me gustan las áreas relacionadas al Backend sobre el Frontend.\",\r\n    \"technologys\": [],\r\n    \"educations\": [],\r\n    \"workExps\": [],\r\n    \"skills\": [],\r\n    \"projects\": []\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -405,6 +554,16 @@
 				{
 					"name": "modifyDataWork",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY4MTY5MDI1NSwiZXhwIjoxNjgxNzI2MjU1fQ.hoRH-1qDrvsvfHqMmh0EHHzpsVCs_xXq2_k-HWI-qraEOdS1BKmgsQplrvyhRzXj",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PUT",
 						"header": [],
 						"body": {
@@ -417,7 +576,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/modifyDataWork/1",
+							"raw": "http://localhost:8080/api/modifyDataWork/10",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -426,7 +585,7 @@
 							"path": [
 								"api",
 								"modifyDataWork",
-								"1"
+								"10"
 							]
 						}
 					},
@@ -562,10 +721,20 @@
 				{
 					"name": "deleteDataWork",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY4MTY2MjAwOSwiZXhwIjoxNjgxNjk4MDA5fQ.j7YposPUc6YyrkoEFhwsUAGq-mmr_BHIzT0flUkCvgnaijOVg3Itc3Ixf92QDHCh",
+									"type": "string"
+								}
+							]
+						},
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/deleteDataWork/2",
+							"raw": "http://localhost:8080/api/deleteDataWork/9",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -574,7 +743,7 @@
 							"path": [
 								"api",
 								"deleteDataWork",
-								"2"
+								"9"
 							]
 						}
 					},
@@ -629,16 +798,54 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreUsuario\":\"admin\",\r\n    \"password\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:8080/api/login",
+					"raw": "http://localhost:8080/auth/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"api",
+						"auth",
 						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NuevoUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Admin\",\r\n    \"apellido\": \"Prueba\",\r\n    \"email\": \"admin@gmail.com\",\r\n    \"nombreUsuario\": \"admin\",\r\n    \"password\": \"admin\",\r\n    \"roles\":[\"admin\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/nuevo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"nuevo"
 					]
 				}
 			},

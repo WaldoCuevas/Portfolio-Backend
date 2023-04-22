@@ -12,8 +12,8 @@ import lombok.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "Persona")
-public class Persona {
+@Table(name = "Person")
+public class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,6 +25,9 @@ public class Persona {
 
     @Column(name = "last_name")
     private String last_name;
+
+    @Column(name = "user_image")
+    private String user_image;
 
     @Column(name = "email")
     private String email;

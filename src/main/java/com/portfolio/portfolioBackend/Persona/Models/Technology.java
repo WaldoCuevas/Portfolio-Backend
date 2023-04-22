@@ -43,5 +43,5 @@ public class Technology {
     @ManyToOne
     @JoinColumn(name="usuario_id", nullable=true)
     @JsonIgnore
-    private Persona technology;
+    private Person technology;
 }
