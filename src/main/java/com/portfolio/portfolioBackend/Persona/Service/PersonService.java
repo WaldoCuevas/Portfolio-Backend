@@ -14,10 +14,10 @@ public interface PersonService {
 
     /* ModifyData */
 
-    public Person modifyPersonalData(Person person);
+    public Person modifyPersonalData(Person person, Integer id);
 
     /* DeleteData */
 
-    public void deletePersonalData();
+    public void deletePersonalData(Integer id);
 
 }

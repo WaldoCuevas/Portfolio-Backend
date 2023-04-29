@@ -1,10 +1,5 @@
 package com.portfolio.portfolioBackend.Persona.Models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
-// Ignorar Json Infinitos
-//import com.fasterxml.jackson.annotation.JsonIgnore;
-
 //Librerias necesarias ->
 import jakarta.persistence.*;
 import lombok.*;
@@ -29,8 +24,4 @@ public class Skill {
     @Column(name = "skill_porcent")
     private Float skill_porcent;
 
-    @ManyToOne
-    @JoinColumn(name="usuario_id", nullable=true)
-    @JsonIgnore
-    private Person skill;
 }

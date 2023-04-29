@@ -1,7 +1,5 @@
 package com.portfolio.portfolioBackend.Persona.Models;
 
-// Ignorar Json Infinitos
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 //Librerias necesarias ->
 import jakarta.persistence.*;
@@ -43,8 +41,4 @@ public class Project {
     @Column(name = "end_project")
     private String end_project;
 
-    @ManyToOne
-    @JoinColumn(name="usuario_id", nullable=true)
-    @JsonIgnore
-    private Person project;
 }

@@ -1,7 +1,5 @@
 package com.portfolio.portfolioBackend.Persona.Controllers;
 
-//import java.util.*;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -27,22 +25,22 @@ public class PersonController {
     /* AddData */
 
     @PostMapping("/addPersonalData")
-    public ResponseEntity<Person> addPersonalData(@RequestBody Person user) {
-        return ResponseEntity.ok().body(this.personaServiceImp.addPersonalData(user));
+    public ResponseEntity<Person> addPersonalData(@RequestBody Person person) {
+        return ResponseEntity.ok().body(this.personaServiceImp.addPersonalData(person));
     }
 
     /* ModifyData */
 
-    @PutMapping("modifyPersonalData")
-    public ResponseEntity<Person> modifyPersonalData(@RequestBody Person user) {
-        return ResponseEntity.ok().body(this.personaServiceImp.modifyPersonalData(user));
+    @PutMapping("modifyPersonalData/{id}")
+    public ResponseEntity<Person> modifyPersonalData(@RequestBody Person user, @PathVariable Integer id) {
+        return ResponseEntity.ok().body(this.personaServiceImp.modifyPersonalData(user,id));
     }
 
     /* DeleteData */
 
-    @DeleteMapping("deletePersonalData")
-    public void deletePersonalData() {
-        this.personaServiceImp.deletePersonalData();
+    @DeleteMapping("deletePersonalData/{id}")
+    public void deletePersonalData(@PathVariable Integer id) {
+        this.personaServiceImp.deletePersonalData(id);
     }
 
 }

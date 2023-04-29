@@ -1,8 +1,5 @@
 package com.portfolio.portfolioBackend.Persona.Models;
 
-// Ignorar Json Infinitos
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 //Librerias necesarias ->
 import jakarta.persistence.*;
 import lombok.*;
@@ -46,8 +43,4 @@ public class ExpWork {
     @Column(name = "end_work_exp")
     private String end_work_exp;
 
-    @ManyToOne
-    @JoinColumn(name="usuario_id", nullable=true)
-    @JsonIgnore
-    private Person workExp;
 }

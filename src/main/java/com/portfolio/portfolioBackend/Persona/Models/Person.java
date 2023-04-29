@@ -4,7 +4,6 @@ package com.portfolio.portfolioBackend.Persona.Models;
 //import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 //Librerias necesarias ->
-import java.util.*;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -29,39 +28,10 @@ public class Person {
     @Column(name = "user_image")
     private String user_image;
 
-    @Column(name = "email")
-    private String email;
-
-    @Column(name = "user_name")
-    private String user_name;
-
-    @Column(name = "user_password")
-    private String user_password;
-
     @Column(name = "about_me_r1")
     private String about_me_r1;
 
     @Column(name = "about_me_r2")
     private String about_me_r2;
-
-    // Tabla Technology
-    @OneToMany(mappedBy = "technology")
-    private List<Technology> technologys;
-
-    // Tabla Educacion
-    @OneToMany(mappedBy = "education")
-    private List<Education> educations;
-
-    // Tabla experiencia Laboral
-    @OneToMany(mappedBy = "workExp")
-    private List<ExpWork> workExps;
-    
-    //Tabla de Habilidades
-    @OneToMany(mappedBy = "skill")
-    private List<Skill> skills;
-
-    // Tabla Project
-    @OneToMany(mappedBy = "project")
-    private List<Project> projects;
 
 }
