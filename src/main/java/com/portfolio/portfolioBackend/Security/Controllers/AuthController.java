@@ -46,6 +46,11 @@ public class AuthController {
     @Autowired
     JwtProvider jwtProvider;
 
+    @GetMapping("/HolaMundo")
+    public String holaMundo(){
+        return "Hola Mundo";
+    }
+
     // CREATE usuario
     @PostMapping("/nuevo")
     public ResponseEntity<?> nuevo(@Valid @RequestBody NuevoUsuario nuevoUsuario) {
