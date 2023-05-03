@@ -20,7 +20,6 @@ com\portfolio\portfolioBackend\Persona\Service\ProjectService.class
 com\portfolio\portfolioBackend\Persona\Repository\ExpWorkRepository.class
 com\portfolio\portfolioBackend\Security\Config\BeansConfig.class
 com\portfolio\portfolioBackend\Security\Repository\UsuarioRepository.class
-com\portfolio\portfolioBackend\Security\Service\UserDetailsServiceImpl.class
 com\portfolio\portfolioBackend\Persona\Controllers\EducationController.class
 com\portfolio\portfolioBackend\Security\Models\Usuario.class
 com\portfolio\portfolioBackend\Security\Controllers\AuthController.class
