@@ -1,51 +1,51 @@
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Controllers\PersonController.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Service\PersonService.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Models\Education.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Repository\PersonRepository.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Controllers\ExpWorkController.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Repository\EducationRepository.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\Enums\RolNombre.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\ServiceImp\EducationServiceImp.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\DTO\JwtDTO.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\Service\RolService.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\Models\Rol.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Repository\TechnologyRepository.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\ServiceImp\SkillServiceImp.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\Models\UsuarioPrincipal.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\ServiceImp\PersonServiceImp.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\Controllers\AuthController.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Controllers\TechnologyController.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Service\SkillService.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\Service\UserDetailsServiceImpl.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Service\ExpWorkService.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\ServiceImp\TechnologyServiceImp.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Controllers\SkillController.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Models\Project.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\Repository\UsuarioRepository.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Repository\SkillRepository.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\Service\UsuarioService.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\JWT\JwtTokenFilter.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\Repository\RolRepository.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Models\ExpWork.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Utils\CreateRoles.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Models\Technology.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Models\Person.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\PortfolioBackendApplication.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Repository\ProjectRepository.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\DTO\LoginUsuario.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Service\ProjectService.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\JWT\JwtProvider.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Repository\ExpWorkRepository.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Controllers\EducationController.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\MainSecurity.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\WebConfing.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Service\EducationService.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\ServiceImp\ProjectServiceImp.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\Config\BeansConfig.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Models\Skill.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\Models\Usuario.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\ServiceImp\ExpWorkServiceImp.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\JWT\JwtEntryPoint.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Security\DTO\NuevoUsuario.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Controllers\ProjectController.java
-e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio-Backend - Security\src\main\java\com\portfolio\portfolioBackend\Persona\Service\TechnologyService.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\WebConfing.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\DTO\JwtDTO.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\PortfolioBackendApplication.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\DTO\NuevoUsuario.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\Config\BeansConfig.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Models\Skill.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Service\ProjectService.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\DTO\LoginUsuario.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Service\ExpWorkService.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Repository\ProjectRepository.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\Models\Rol.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Repository\TechnologyRepository.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Models\Project.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\ServiceImp\ExpWorkServiceImp.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\Enums\RolNombre.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\JWT\JwtProvider.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Models\Technology.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\Service\RolService.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Service\EducationService.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Service\SkillService.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\ServiceImp\ProjectServiceImp.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Controllers\ExpWorkController.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Controllers\SkillController.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Controllers\TechnologyController.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\Models\UsuarioPrincipal.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\MainSecurity.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\ServiceImp\EducationServiceImp.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\ServiceImp\TechnologyServiceImp.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\ServiceImp\SkillServiceImp.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\Controllers\AuthController.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\ServiceImp\PersonServiceImp.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Models\ExpWork.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Controllers\ProjectController.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Repository\SkillRepository.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Utils\CreateRoles.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\Repository\RolRepository.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\Service\UserDetailsServiceImpl.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Service\PersonService.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Models\Person.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Service\TechnologyService.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Controllers\EducationController.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Models\Education.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\Models\Usuario.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\JWT\JwtEntryPoint.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\Repository\UsuarioRepository.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Repository\PersonRepository.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Repository\ExpWorkRepository.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\JWT\JwtTokenFilter.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Security\Service\UsuarioService.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Controllers\PersonController.java
+e:\Waldo\Programacion\Practicas\Argentina Programa\Portfolio - PROD\Portfolio-Backend - Spring\src\main\java\com\portfolio\portfolioBackend\Persona\Repository\EducationRepository.java
