@@ -19,7 +19,7 @@ import com.portfolio.portfolioBackend.Persona.ServiceImp.ProjectServiceImp;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = {"https://waldocuevas-portfolio.web.app/"})
+@CrossOrigin(origins = {"https://waldocuevas-portfolio.web.app"})
 public class ProjectController {
 
     @Autowired

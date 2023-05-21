@@ -41,6 +41,7 @@ com\portfolio\portfolioBackend\Persona\Repository\EducationRepository.class
 com\portfolio\portfolioBackend\Persona\Repository\TechnologyRepository.class
 com\portfolio\portfolioBackend\Persona\Service\ExpWorkService.class
 com\portfolio\portfolioBackend\Security\Repository\RolRepository.class
+com\portfolio\portfolioBackend\WebConfing$1.class
 com\portfolio\portfolioBackend\Persona\Controllers\PersonController.class
 com\portfolio\portfolioBackend\Security\DTO\JwtDTO.class
 com\portfolio\portfolioBackend\Persona\Models\Technology.class
