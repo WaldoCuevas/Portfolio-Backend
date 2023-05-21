@@ -124,7 +124,7 @@ CREATE TABLE `usuario` (
 
 
 INSERT INTO `usuario` (`id`, `apellido`, `email`, `nombre`, `nombre_usuario`, `password`) VALUES
-(1, 'Prueba', 'admin@gmail.com', 'Admin', 'admin', '$2a$10$g6YqLGLthrCOOZNz4.7U0uWulsv81JdOGSh4VH5WcGihvpmSafND2'),
+(1, 'Prueba', 'admin@gmail.com', 'admin', 'admin', '$2a$10$g6YqLGLthrCOOZNz4.7U0uWulsv81JdOGSh4VH5WcGihvpmSafND2'),
 (2, 'Prueba', 'user@gmail.com', 'user', 'user', '$2a$10$6lGrR1jc8RwjythUL7RzuuEYGHbxfAqmfQc7ttOrjmgxzC603ST5W');
 
 
