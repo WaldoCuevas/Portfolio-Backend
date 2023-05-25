@@ -12,7 +12,6 @@ com\portfolio\portfolioBackend\Persona\Models\Education.class
 com\portfolio\portfolioBackend\Persona\ServiceImp\ProjectServiceImp.class
 com\portfolio\portfolioBackend\Security\Models\Rol.class
 com\portfolio\portfolioBackend\Persona\Repository\SkillRepository.class
-com\portfolio\portfolioBackend\WebConfing.class
 com\portfolio\portfolioBackend\Persona\Repository\ProjectRepository.class
 com\portfolio\portfolioBackend\Persona\ServiceImp\PersonServiceImp.class
 com\portfolio\portfolioBackend\Security\DTO\NuevoUsuario.class
@@ -36,12 +35,12 @@ com\portfolio\portfolioBackend\Persona\Repository\PersonRepository.class
 com\portfolio\portfolioBackend\Persona\ServiceImp\SkillServiceImp.class
 com\portfolio\portfolioBackend\Security\JWT\JwtProvider.class
 com\portfolio\portfolioBackend\Persona\Controllers\ExpWorkController.class
+com\portfolio\portfolioBackend\PortfolioBackendApplication$1.class
 com\portfolio\portfolioBackend\Persona\Models\Skill.class
 com\portfolio\portfolioBackend\Persona\Repository\EducationRepository.class
 com\portfolio\portfolioBackend\Persona\Repository\TechnologyRepository.class
 com\portfolio\portfolioBackend\Persona\Service\ExpWorkService.class
 com\portfolio\portfolioBackend\Security\Repository\RolRepository.class
-com\portfolio\portfolioBackend\WebConfing$1.class
 com\portfolio\portfolioBackend\Persona\Controllers\PersonController.class
 com\portfolio\portfolioBackend\Security\DTO\JwtDTO.class
 com\portfolio\portfolioBackend\Persona\Models\Technology.class

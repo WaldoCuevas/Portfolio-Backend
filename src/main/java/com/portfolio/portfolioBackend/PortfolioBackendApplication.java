@@ -1,14 +1,12 @@
 package com.portfolio.portfolioBackend;
 
-import java.util.Arrays;
-
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.CorsConfigurationSource;
-import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 public class PortfolioBackendApplication {
@@ -17,10 +15,10 @@ public class PortfolioBackendApplication {
 		SpringApplication.run(PortfolioBackendApplication.class, args);
 	}
 
+	/*
 	@Value("${allowed.origin}")
     private String allowedOrigin;
 
-	// Cors Spring Security
 	@Bean
 	CorsConfigurationSource corsConfigurationSource() {
 		CorsConfiguration configuration = new CorsConfiguration();
@@ -31,5 +29,22 @@ public class PortfolioBackendApplication {
 		source.registerCorsConfiguration("/**", configuration);
 		return source;
 	}
+	*/
+
+	@Value("${allowed.origin}")
+    private String allowedOrigin;
+    
+    @Bean
+    public WebMvcConfigurer getCorsConfiguration (){
+        return new WebMvcConfigurer() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**"). 
+                allowedOrigins(allowedOrigin)
+                .allowedMethods("GET","POST","PUT","DELETE","OPTIONS")
+                .allowedHeaders("*");
+            }
+        };
+    }
 
 }
