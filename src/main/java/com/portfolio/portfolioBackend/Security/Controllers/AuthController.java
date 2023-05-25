@@ -28,7 +28,6 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = {"https://waldocuevas-portfolio.web.app/"})
 public class AuthController {
     
     @Autowired
