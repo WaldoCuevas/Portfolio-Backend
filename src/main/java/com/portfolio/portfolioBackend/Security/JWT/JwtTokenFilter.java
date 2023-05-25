@@ -34,7 +34,7 @@ public class JwtTokenFilter extends OncePerRequestFilter {
         try {
             String token = getToken(req);
             System.out.println("Valor del token obtenido: "+ token);
-            
+
             if(token != null && jwtProvider.validateToken(token)){
                 String nombreUsuario = jwtProvider.getNombreUsuarioFromToken(token);
                 UserDetails userDetails = detailsServiceImpl.loadUserByUsername(nombreUsuario);
@@ -55,5 +55,6 @@ public class JwtTokenFilter extends OncePerRequestFilter {
             return header.replace("Bearer ", "");
         return null;
     }
+
     
 }
