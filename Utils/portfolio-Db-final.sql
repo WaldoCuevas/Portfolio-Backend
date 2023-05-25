@@ -1,4 +1,3 @@
-
 CREATE TABLE `education` (
   `education_id` int(11) NOT NULL,
   `description_education_r1` varchar(255) DEFAULT NULL,
@@ -12,12 +11,12 @@ CREATE TABLE `education` (
   `start_education` varchar(255) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-
-
 INSERT INTO `education` (`education_id`, `description_education_r1`, `description_education_r2`, `description_education_r3`, `description_education_r4`, `education_image`, `end_education`, `qualification`, `school`, `start_education`) VALUES
 (1, 'Esta carrera me ofreció conocimientos y prácticas intensivas que me permitieron analizar un problema de procesamiento de datos y desarrollar una solución en un lenguaje apropiado utilizando un computador.', '', '', '', 'https://files.deply.dev/files/a19ea023-5e3d-49b1-bd92-0841a5dfd9aa-8a8b6ce7-6d2c-4579-85de-e7615753cd38-b1c24b35-22ef-4fcc-badc-f619d2e5b75f-c9acf070-481a-4c5f-8f3a-a6d0c5088e42-logo-utn-removebg-preview.png', '2022', 'Tecnico Universitario en Programación', 'Universidad Tecnologica Nacional', '2021'),
 (2, 'En esta primera etapa aprendi sobre:', 'Gobstone: para fundamentos de programacion.', 'Javascript: para programacion imperactiva e estructuras de datos.', 'Ruby: para el paradigma de objetos.', 'https://files.deply.dev/files/786b7e40-c4fc-465e-aca7-771f2e81ea3b-32cd2af2-6d91-4cef-ab8f-3ffdcbe54631-icon_Argentina_programa_2.png', '2022', '#SeProgramar', 'Argentina Programa - 1ra Etapa', '2021'),
 (3, 'En esta etapa aprendi sobre:', 'Las herramientas de un dev FrontEnd.', 'Las herramientas de un dev BackEnd.', 'Conocimiento en DevOps y Testing.', 'https://files.deply.dev/files/c6be0e46-cd50-46c8-94ae-2eb97d88f1c0-a5f44a7e-046f-4169-aeda-02b713badf80-icon_Argentina_programa_3.png', '2023', '#YoProgramo', 'Argentina Programa - 2da Etapa', '2022');
+
+
 
 
 
@@ -30,10 +29,10 @@ CREATE TABLE `person` (
   `user_image` varchar(255) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-
-
 INSERT INTO `person` (`user_id`, `about_me_r1`, `about_me_r2`, `last_name`, `name`, `user_image`) VALUES
 (1, 'Soy una persona autodictacta y comprometida con los trabajos querealizo. Empeze a programar en el 2021 cuando inicie mi carrera de Programación en la Universidad Tecnologica Nacional - FRVT.', 'A finales del año 2022 me recibí de Técnico Universitario en Programación. Personalmente siento interés por el mundo de la informática y el rubro IT. Entre mis preferencias me gustan las áreas relacionadas al Backend sobre el Frontend.', 'Cueva', 'Waldos', 'https://files.deply.dev/files/bb085176-341b-4802-a2e1-1463217ad5dd-01465cbd-ac37-4b0e-8b69-0c256d51a11f-fotito.png');
+
+
 
 
 
@@ -49,12 +48,12 @@ CREATE TABLE `projects` (
   `start_project` varchar(255) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-
-
 INSERT INTO `projects` (`proyectos_id`, `end_project`, `link_github`, `link_project`, `project_description`, `project_image`, `project_name`, `project_title`, `start_project`) VALUES
 (1, '2023', 'https://github.com/WaldoCuevas/StockTracking', 'null', 'Desarrollo de una aplicación que permite realizar el seguimiento de Stock de una empresa ficticia.', 'https://files.deply.dev/files/43904778-e7d6-494c-b4be-9aafbd86a2db-7d6af530-457d-482e-af94-9cab60c0257c-stockTracking.jpg', 'StockTracking', 'Application Web', '2022'),
 (2, '2022', 'https://github.com/WaldoCuevas/comunicate', 'https://comunicate-con-nosotros.web.app/home', 'Desarrollo de una aplicación que permite una mejor comunicación con personas con capacidades especiales.', 'https://files.deply.dev/files/6e8622cf-d974-4b1a-b74c-4600fef3cd6d-2a792668-9511-4019-85c3-39ed6daffeb2-project-Esc.Especial.jpg', 'Comunicate', 'ApplicationWeb', '2022'),
 (3, '2023', 'https://github.com/WaldoCuevas/waldocuevas.github.io', 'https://waldocuevas.github.io', 'Realización de un portafolio web de parte de Argentina Programa.', 'https://files.deply.dev/files/ce886845-6a11-4113-94b8-7045cd7e64d7-01d51121-000c-4753-bf31-969bcbe13401-portfolio.jpg', 'Portfolio Web', 'Web', '2022');
+
+
 
 
 
@@ -63,11 +62,11 @@ CREATE TABLE `rol` (
   `rol_nombre` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-
-
 INSERT INTO `rol` (`id`, `rol_nombre`) VALUES
 (1, 'ROLE_ADMIN'),
 (2, 'ROLE_USER');
+
+
 
 
 
@@ -78,8 +77,6 @@ CREATE TABLE `skill` (
   `skills_name` varchar(255) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-
-
 INSERT INTO `skill` (`skill_id`, `skill_image`, `skill_porcent`, `skills_name`) VALUES
 (1, 'https://img.icons8.com/ios/256/java-coffee-cup-logo--v1.png', 90, 'Java'),
 (2, 'https://img.icons8.com/ios/256/mysql-logo.png', 70, 'MySql'),
@@ -88,6 +85,8 @@ INSERT INTO `skill` (`skill_id`, `skill_image`, `skill_porcent`, `skills_name`) 
 (5, 'https://img.icons8.com/ios-filled/256/css3.png', 60, 'CSS'),
 (6, 'https://img.icons8.com/ios-filled/256/javascript-logo.png', 70, 'JavaScript'),
 (7, 'https://img.icons8.com/ios-filled/256/angularjs.png', 80, 'Angular');
+
+
 
 
 
@@ -102,13 +101,13 @@ CREATE TABLE `tecnologias` (
   `name_technology` varchar(255) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-
-
 INSERT INTO `tecnologias` (`tecnology_id`, `badge_technology_1`, `badge_technology_2`, `badge_technology_3`, `badge_technology_4`, `description_technology_r1`, `description_technology_r2`, `name_technology`) VALUES
 (1, 'HTML', 'CSS', 'JS', 'Angular', 'En Frontend tengo conocimientos en HTML, CSS y JavaScript.', 'Además utilizo framework como Angular, y librerias como Bootstrap.', 'FrontEnd Dev'),
 (2, 'Java', 'Spring', 'Node js', 'Ruby', 'Manejo el lenguaje de programacion Java junto con su framework Spring.', 'Algunas de las características de Spring que manejo son: Spring Data, Spring boot e Spring Securiry.', 'Backend Dev'),
 (3, 'MySql', 'MongoDB', 'Postgress', '', 'Entre las bases de datos relacionales que trabajo estan MySql yPostGress.', 'Y entre las bases de datos no relacionales que trabajo estan MongoDB', 'Backend DataBase'),
 (4, 'Scrum', 'Docker', 'Git/Github', 'Postman', 'Las herramientas devOps que utilizo son git e github, postman y docker.', 'Tambien suelo trabajar con una metodologia ágil Scrum.', 'DevOps');
+
+
 
 
 
@@ -121,12 +120,12 @@ CREATE TABLE `usuario` (
   `password` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-
-
 INSERT INTO `usuario` (`id`, `apellido`, `email`, `nombre`, `nombre_usuario`, `password`) VALUES
-(1, 'Prueba', 'admin@gmail.com', 'admin', 'admin', '$2a$10$g6YqLGLthrCOOZNz4.7U0uWulsv81JdOGSh4VH5WcGihvpmSafND2'),
+(1, 'Prueba', 'admin@gmail.com', 'Admin', 'admin', '$2a$10$g6YqLGLthrCOOZNz4.7U0uWulsv81JdOGSh4VH5WcGihvpmSafND2'),
 (2, 'Prueba', 'user@gmail.com', 'user', 'user', '$2a$10$6lGrR1jc8RwjythUL7RzuuEYGHbxfAqmfQc7ttOrjmgxzC603ST5W'),
-(3, 'Cuevas', 'Waldo@gmail.com', 'Waldo', 'Waldo', '123');
+(3, 'Cuevas', 'WaldoCuevas@gmail.com', 'Waldo', 'Waldo', '$2a$10$9jE1/90vIxBN2LVemaR.ROew0fb3H.n3SXypoutY8n4C6jS39pAcy');
+
+
 
 
 
@@ -135,12 +134,14 @@ CREATE TABLE `usuario_rol` (
   `rol_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-
-
 INSERT INTO `usuario_rol` (`usuario_id`, `rol_id`) VALUES
 (1, 1),
 (1, 2),
-(2, 2);
+(2, 2),
+(3, 1),
+(3, 2);
+
+
 
 
 
@@ -156,8 +157,6 @@ CREATE TABLE `work_experience` (
   `workplace` varchar(255) DEFAULT NULL,
   `workstation` varchar(255) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-
 
 INSERT INTO `work_experience` (`work_exp_id`, `description_work_exp_r1`, `description_work_exp_r2`, `description_work_exp_r3`, `end_work_exp`, `job`, `start_work_exp`, `work_image`, `workplace`, `workstation`) VALUES
 (1, 'Desarrollo en equipo de una aplicación que facilita la comunicación entre el equipo docente y los alumnos', 'Instalación del software en los dispositivos de la institución', 'Mantenimiento al software desarrollado', '2022', 'Comunicate', '2022', 'https://files.deply.dev/files/a865d63d-8f53-422c-bda4-892891a9fc25-17754f74-02a8-47df-a1bf-9d9ba2636a40-escuela_especial_n°_2045.jpg', 'Escuela Especial N° 2045 - Dr. Oscar Oñativia', 'Desarrollador');
@@ -211,7 +210,6 @@ ALTER TABLE `person`
 ALTER TABLE `projects`
   MODIFY `proyectos_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
-
 ALTER TABLE `rol`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
@@ -225,10 +223,9 @@ ALTER TABLE `tecnologias`
 
 
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 
 ALTER TABLE `work_experience`
-  MODIFY `work_exp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `work_exp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
-

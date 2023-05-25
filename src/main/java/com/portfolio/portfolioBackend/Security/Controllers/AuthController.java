@@ -1,6 +1,7 @@
 package com.portfolio.portfolioBackend.Security.Controllers;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,6 +49,12 @@ public class AuthController {
     @GetMapping("/HolaMundo")
     public String holaMundo(){
         return "Hola Mundo";
+    }
+
+    //Lista
+    @GetMapping("/listar")
+    public ResponseEntity<List<Usuario>> ListaUsuario (){
+        return ResponseEntity.status(HttpStatus.OK).body(usuarioService.Listar_Usuario());
     }
 
     // CREATE usuario
