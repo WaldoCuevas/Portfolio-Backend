@@ -3,14 +3,10 @@ package com.portfolio.portfolioBackend;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-@EnableWebMvc
-@Configuration
 public class PortfolioBackendApplication {
 
 	public static void main(String[] args) {
@@ -18,7 +14,7 @@ public class PortfolioBackendApplication {
 	}
 
 	@Bean
-	public WebMvcConfigurer getCorsConfiguration() {
+	public WebMvcConfigurer corsConfigurer() {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
