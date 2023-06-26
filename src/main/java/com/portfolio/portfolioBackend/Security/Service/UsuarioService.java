@@ -1,6 +1,5 @@
 package com.portfolio.portfolioBackend.Security.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,10 +31,6 @@ public class UsuarioService {
 
     public void save(Usuario usuario){
         usuarioRepository.save(usuario);
-    }
-
-    public List<Usuario> Listar_Usuario() {
-        return usuarioRepository.findAll();
     }
 
 }

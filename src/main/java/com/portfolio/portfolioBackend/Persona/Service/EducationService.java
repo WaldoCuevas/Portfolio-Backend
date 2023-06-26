@@ -7,8 +7,9 @@ import com.portfolio.portfolioBackend.Persona.Models.Education;
 public interface EducationService {
 
     /* GetData */
+    public Education getDataEducational(Integer id);
 
-    public List<Education> getDataEducational();
+    public List<Education> getAllDataEducational();
 
     /* AddData */
 

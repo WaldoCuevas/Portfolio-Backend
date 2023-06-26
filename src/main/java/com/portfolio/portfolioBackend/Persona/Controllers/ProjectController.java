@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,7 @@ import com.portfolio.portfolioBackend.Persona.ServiceImp.ProjectServiceImp;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "http://localhost:4200/")
 public class ProjectController {
 
     @Autowired
@@ -25,9 +27,14 @@ public class ProjectController {
 
     /* ReadData */
 
-    @GetMapping("/getDataProject")
-    public ResponseEntity<List<Project>> getDataProject() {
-        return ResponseEntity.ok().body(this.projectServiceImp.getDataProject());
+    @GetMapping("/getDataProject/{id}")
+    public ResponseEntity<Project> getDataProject(@PathVariable Integer id) {
+        return ResponseEntity.ok().body(this.projectServiceImp.getDataProject(id));
+    }
+
+    @GetMapping("/getAllDataProject")
+    public ResponseEntity<List<Project>> getAllDataProject() {
+        return ResponseEntity.ok().body(this.projectServiceImp.getAllDataProject());
     }
 
     /* AddData */

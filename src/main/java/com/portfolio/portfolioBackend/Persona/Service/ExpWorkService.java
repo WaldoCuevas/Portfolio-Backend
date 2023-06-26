@@ -7,8 +7,9 @@ import com.portfolio.portfolioBackend.Persona.Models.ExpWork;
 public interface ExpWorkService {
 
     /* GetData */
+    public ExpWork getDataWork(Integer id);
 
-    public List<ExpWork> getDataWork();
+    public List<ExpWork> getAllDataWork();
 
     /* AddData */
 

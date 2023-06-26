@@ -1,6 +1,7 @@
 package com.portfolio.portfolioBackend.Persona.ServiceImp;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,7 +19,15 @@ public class EducationServiceImp implements EducationService {
     /* ReadData */
 
     @Override
-    public List<Education> getDataEducational() {
+    public Education getDataEducational(Integer id) {
+
+        Optional<Education> education = educationRepository.findById(id);
+
+        return education.orElse(null);
+    }
+
+    @Override
+    public List<Education> getAllDataEducational() {
         return educationRepository.findAll();
     }
 

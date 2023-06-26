@@ -1,6 +1,7 @@
 package com.portfolio.portfolioBackend.Persona.ServiceImp;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,9 +17,16 @@ public class ProjectServiceImp implements ProjectService {
     private ProjectRepository projectRepository;
 
     /* ReadData */
+    @Override
+    public Project getDataProject(Integer id) {
+
+        Optional<Project> project = projectRepository.findById(id);
+
+        return project.orElse(null);
+    }
 
     @Override
-    public List<Project> getDataProject() {
+    public List<Project> getAllDataProject() {
         return projectRepository.findAll();
     }
 

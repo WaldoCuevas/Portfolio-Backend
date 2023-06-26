@@ -1,6 +1,7 @@
 package com.portfolio.portfolioBackend.Persona.ServiceImp;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,8 +18,20 @@ public class TechnologyServiceImp implements TechnologyService {
 
     /* ReadData */
 
+    public Technology getDataTechnology(Integer id) {
+
+        Optional<Technology> technology = technologyRepository.findById(id);
+
+        return technology.orElse(null);
+
+    }
+
+
+
     @Override
-    public List<Technology> getDataTechnology() {
+    public List<Technology> getAllDataTechnology() {
+
+
         return technologyRepository.findAll();
     }
 

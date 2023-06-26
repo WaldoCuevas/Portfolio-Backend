@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,7 @@ import com.portfolio.portfolioBackend.Persona.ServiceImp.EducationServiceImp;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "http://localhost:4200/")
 public class EducationController {
 
     @Autowired
@@ -25,9 +27,14 @@ public class EducationController {
 
     /* ReadData */
 
-    @GetMapping("/getDataEducation")
-    public ResponseEntity<List<Education>> getDataEducation() {
-        return ResponseEntity.ok().body(this.educationServiceImp.getDataEducational());
+    @GetMapping("/getDataEducation/{id}")
+    public ResponseEntity<Education> getDataEducation(@PathVariable Integer id) {
+        return ResponseEntity.ok().body(this.educationServiceImp.getDataEducational(id));
+    }
+
+    @GetMapping("/getAllDataEducation")
+    public ResponseEntity<List<Education>> getAllDataEducation() {
+        return ResponseEntity.ok().body(this.educationServiceImp.getAllDataEducational());
     }
 
     /* AddData */

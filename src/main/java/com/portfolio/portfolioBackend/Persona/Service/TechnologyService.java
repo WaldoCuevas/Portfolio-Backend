@@ -8,7 +8,9 @@ public interface TechnologyService {
 
     /* GetData */
 
-    public List<Technology> getDataTechnology();
+    public Technology getDataTechnology(Integer id);
+
+    public List<Technology> getAllDataTechnology();
 
     /* AddData */
 

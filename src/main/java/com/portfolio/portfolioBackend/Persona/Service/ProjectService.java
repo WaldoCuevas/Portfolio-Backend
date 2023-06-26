@@ -7,8 +7,9 @@ import com.portfolio.portfolioBackend.Persona.Models.Project;
 public interface ProjectService {
 
     /* GetData */
+    public Project getDataProject(Integer id);
 
-    public List<Project> getDataProject();
+    public List<Project> getAllDataProject();
 
     /* AddData */
 

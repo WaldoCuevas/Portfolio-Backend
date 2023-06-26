@@ -1,7 +1,6 @@
 package com.portfolio.portfolioBackend.Security.Controllers;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +28,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/auth")
+@CrossOrigin(origins = "http://localhost:4200/")
 public class AuthController {
     
     @Autowired
@@ -47,14 +47,8 @@ public class AuthController {
     JwtProvider jwtProvider;
 
     @GetMapping("/HolaMundo")
-    public String holaMundo(){
+    public String HolaMundo() {
         return "Hola Mundo";
-    }
-
-    //Lista
-    @GetMapping("/listar")
-    public ResponseEntity<List<Usuario>> ListaUsuario (){
-        return ResponseEntity.status(HttpStatus.OK).body(usuarioService.Listar_Usuario());
     }
 
     // CREATE usuario

@@ -1,6 +1,7 @@
 package com.portfolio.portfolioBackend.Persona.ServiceImp;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,9 +17,16 @@ public class SkillServiceImp implements SkillService {
     private SkillRepository skillRepository;
 
     /* ReadData */
+    @Override
+    public Skill getDataSkill(Integer id) {
+
+        Optional<Skill> skill = skillRepository.findById(id);
+
+        return skill.orElse(null);
+    }
 
     @Override
-    public List<Skill> getDataSkill() {
+    public List<Skill> getAllDataSkill() {
         return skillRepository.findAll();
     }
 

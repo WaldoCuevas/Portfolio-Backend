@@ -7,8 +7,9 @@ import com.portfolio.portfolioBackend.Persona.Models.Skill;
 public interface SkillService {
 
     /* GetData */
+    public Skill getDataSkill(Integer id);
 
-    public List<Skill> getDataSkill();
+    public List<Skill> getAllDataSkill();
 
     /* AddData */
 

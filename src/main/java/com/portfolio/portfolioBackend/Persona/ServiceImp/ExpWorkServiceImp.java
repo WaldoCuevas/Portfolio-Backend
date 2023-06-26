@@ -1,6 +1,7 @@
 package com.portfolio.portfolioBackend.Persona.ServiceImp;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,7 +20,16 @@ public class ExpWorkServiceImp implements ExpWorkService {
     /* ReadData */
 
     @Override
-    public List<ExpWork> getDataWork() {
+    public ExpWork getDataWork(Integer id) {
+
+        Optional<ExpWork> expWork = expWorkRepository.findById(id);
+
+        return expWork.orElse(null);
+
+    }
+
+    @Override
+    public List<ExpWork> getAllDataWork() {
         return expWorkRepository.findAll();
 
     }
