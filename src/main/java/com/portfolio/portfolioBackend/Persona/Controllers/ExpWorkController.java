@@ -19,7 +19,6 @@ import com.portfolio.portfolioBackend.Persona.ServiceImp.ExpWorkServiceImp;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:4200/")
 public class ExpWorkController {
 
     @Autowired
